@@ -151,3 +151,13 @@ article.md
 .env*
 !.env.example
 !.env_ready
+
+# Local scratch / one-off eval dumps at repo root
+/*_REPORT.md
+/*_EVALUATION.md
+/*_SURVEY.md
+/RESUME_*.md
+/VOC_*.md
+/planner_*_results.json
+/stage*_e2e_result.txt
+/fix_*.py
