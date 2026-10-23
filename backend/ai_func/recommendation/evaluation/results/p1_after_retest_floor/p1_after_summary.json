@@ -1,0 +1,67 @@
+{
+  "arm": "after",
+  "lint": false,
+  "elapsed_s": 582.0,
+  "baseline": {
+    "simple_avg_tasks": 4.85,
+    "simple_pure_retrieve_rate": 0.085,
+    "plan_ok_rate": 0.9833,
+    "optional_full": {
+      "deduplicate_images": 187,
+      "select_images": 132,
+      "rerank_candidates": 68,
+      "verify_visual_condition": 20
+    },
+    "source": "evaluation/results/task_catalog_ab_deepseek/p1_plan_bloat.json"
+  },
+  "all": {
+    "n": 240,
+    "avg_tasks": 3.25,
+    "pure_retrieve_rate": 0.2375,
+    "optional_counts": {
+      "verify_visual_condition": 18,
+      "select_images": 17,
+      "deduplicate_images": 19,
+      "sort_images": 6,
+      "rerank_candidates": 4
+    },
+    "plan_ok_rate": 0.975
+  },
+  "simple_subset": {
+    "n": 153,
+    "avg_tasks": 3.209,
+    "pure_retrieve_rate": 0.3725,
+    "optional_counts": {
+      "verify_visual_condition": 8,
+      "select_images": 7,
+      "deduplicate_images": 17,
+      "sort_images": 1,
+      "rerank_candidates": 1
+    },
+    "plan_ok_rate": 0.9869
+  },
+  "delta": {
+    "simple_avg_tasks": -1.641,
+    "simple_pure_retrieve_rate": 0.2875,
+    "plan_ok_rate": -0.0083
+  },
+  "plan_lint_stripped": 0,
+  "stage_latency": {
+    "planner": {
+      "n": 259,
+      "mean_ms": 2046.611,
+      "p50_ms": 1776.953,
+      "p95_ms": 2681.41,
+      "p99_ms": 2933.411,
+      "max_ms": 61835.07
+    }
+  },
+  "pass": false,
+  "note": "通过：简单均 Task 显著下降 + plan_ok 不降。单独 4.85 不进简历；只写 4.85→X。",
+  "paths": {
+    "records": "D:\\document\\py_prj\\ImageTextSystem\\Smartlmager-sqlite-vec\\backend\\ai_func\\recommendation\\evaluation\\results\\p1_after_retest_floor\\after_retest.json",
+    "summary": "D:\\document\\py_prj\\ImageTextSystem\\Smartlmager-sqlite-vec\\backend\\ai_func\\recommendation\\evaluation\\results\\p1_after_retest_floor\\p1_after_summary.json",
+    "baseline": "evaluation/results/task_catalog_ab_deepseek/p1_plan_bloat.json"
+  },
+  "still_bloated": false
+}

@@ -1,0 +1,23 @@
+{
+  "latency": {
+    "r2_batch_10": {
+      "n": 1,
+      "mean_ms": 80.421,
+      "p50_ms": 80.421,
+      "p95_ms": 80.421,
+      "p99_ms": 80.421,
+      "max_ms": 80.421
+    },
+    "r2_sequential_10": {
+      "n": 1,
+      "mean_ms": 503.311,
+      "p50_ms": 503.311,
+      "p95_ms": 503.311,
+      "p99_ms": 503.311,
+      "max_ms": 503.311
+    }
+  },
+  "a2_close_triggers": true,
+  "a2_wide_skips": true,
+  "note": "mock sleep，不是 GLM 实测。目标对照：逐张 ~10*per_image vs 一次 batch。"
+}

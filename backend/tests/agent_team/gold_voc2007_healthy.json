@@ -1,0 +1,430 @@
+{
+ "dataset": "PASCAL VOC2007 official (ox.ac.uk)",
+ "unit": "unique image content (six-digit id)",
+ "queries": [
+  {
+   "query": "公交车的照片",
+   "class": "bus",
+   "query_en": "photos of bus",
+   "gt_unique": [
+    "000648",
+    "000663",
+    "000727",
+    "000768",
+    "000793"
+   ],
+   "gt_db_rows": [
+    34,
+    36,
+    41,
+    45,
+    47
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "摩托车的照片",
+   "class": "motorbike",
+   "query_en": "photos of motorbike",
+   "gt_unique": [
+    "000364",
+    "000733",
+    "000822"
+   ],
+   "gt_db_rows": [
+    3,
+    16,
+    42,
+    51
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train"
+   ]
+  },
+  {
+   "query": "椅子的照片",
+   "class": "chair",
+   "query_en": "photos of chair",
+   "gt_unique": [
+    "000452",
+    "000661",
+    "000804",
+    "000830",
+    "001027"
+   ],
+   "gt_db_rows": [
+    5,
+    19,
+    35,
+    49,
+    52,
+    61
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "汽车的照片",
+   "class": "car",
+   "query_en": "photos of car",
+   "gt_unique": [
+    "000515",
+    "000529",
+    "000648",
+    "000663",
+    "000727"
+   ],
+   "gt_db_rows": [
+    24,
+    26,
+    34,
+    36,
+    41
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "沙发的照片",
+   "class": "sofa",
+   "query_en": "photos of sofa",
+   "gt_unique": [
+    "000452",
+    "000584",
+    "000661",
+    "000804",
+    "001027",
+    "001149",
+    "001154"
+   ],
+   "gt_db_rows": [
+    5,
+    19,
+    30,
+    35,
+    49,
+    61,
+    63,
+    64
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "火车的照片",
+   "class": "train",
+   "query_en": "photos of train",
+   "gt_unique": [
+    "000333",
+    "000629",
+    "000636"
+   ],
+   "gt_db_rows": [
+    13,
+    31,
+    32
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test"
+   ]
+  },
+  {
+   "query": "牛的照片",
+   "class": "cow",
+   "query_en": "photos of cow",
+   "gt_unique": [
+    "000464",
+    "000491",
+    "000504",
+    "000904",
+    "001073"
+   ],
+   "gt_db_rows": [
+    4,
+    6,
+    20,
+    22,
+    23,
+    58,
+    62
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "猫的照片",
+   "class": "cat",
+   "query_en": "photos of cat",
+   "gt_unique": [
+    "000528",
+    "000549",
+    "000876",
+    "001185"
+   ],
+   "gt_db_rows": [
+    1,
+    25,
+    27,
+    57,
+    66
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "瓶子的照片",
+   "class": "bottle",
+   "query_en": "photos of bottle",
+   "gt_unique": [
+    "000346",
+    "000559",
+    "000762",
+    "000999",
+    "001185"
+   ],
+   "gt_db_rows": [
+    14,
+    28,
+    44,
+    60,
+    66
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "电视或显示器的照片",
+   "class": "tvmonitor",
+   "query_en": "photos of tvmonitor",
+   "gt_unique": [
+    "000559",
+    "001027",
+    "001149",
+    "001175"
+   ],
+   "gt_db_rows": [
+    5,
+    28,
+    61,
+    63,
+    65
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "盆栽的照片",
+   "class": "pottedplant",
+   "query_en": "photos of pottedplant",
+   "gt_unique": [
+    "000661",
+    "001149",
+    "001154"
+   ],
+   "gt_db_rows": [
+    35,
+    63,
+    64
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "val"
+   ]
+  },
+  {
+   "query": "羊的照片",
+   "class": "sheep",
+   "query_en": "photos of sheep",
+   "gt_unique": [
+    "000676",
+    "000925"
+   ],
+   "gt_db_rows": [
+    38,
+    59
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "val"
+   ]
+  },
+  {
+   "query": "自行车的照片",
+   "class": "bicycle",
+   "query_en": "photos of bicycle",
+   "gt_unique": [
+    "000515",
+    "000572",
+    "000584",
+    "000793",
+    "001027"
+   ],
+   "gt_db_rows": [
+    5,
+    24,
+    29,
+    30,
+    47,
+    61
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "船的照片",
+   "class": "boat",
+   "query_en": "photos of boat",
+   "gt_unique": [
+    "000529",
+    "000713",
+    "000837",
+    "000862"
+   ],
+   "gt_db_rows": [
+    26,
+    39,
+    54,
+    56
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "val"
+   ]
+  },
+  {
+   "query": "飞机的照片",
+   "class": "aeroplane",
+   "query_en": "photos of aeroplane",
+   "gt_unique": [
+    "000033",
+    "000243",
+    "000256",
+    "000480",
+    "000648",
+    "000738"
+   ],
+   "gt_db_rows": [
+    7,
+    8,
+    9,
+    21,
+    34,
+    43
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "餐桌的照片",
+   "class": "diningtable",
+   "query_en": "photos of diningtable",
+   "gt_unique": [
+    "000762",
+    "000830",
+    "000847",
+    "001185"
+   ],
+   "gt_db_rows": [
+    44,
+    52,
+    55,
+    66
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "马的照片",
+   "class": "horse",
+   "query_en": "photos of horse",
+   "gt_unique": [
+    "000332",
+    "000392",
+    "000783",
+    "000799",
+    "000836",
+    "000904"
+   ],
+   "gt_db_rows": [
+    4,
+    12,
+    17,
+    46,
+    48,
+    53,
+    58
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "test",
+    "train",
+    "val"
+   ]
+  },
+  {
+   "query": "鸟的照片",
+   "class": "bird",
+   "query_en": "photos of bird",
+   "gt_unique": [
+    "000363",
+    "000645"
+   ],
+   "gt_db_rows": [
+    15,
+    33
+   ],
+   "source": "PASCAL VOC2007 official annotations (byte-identical validation: MATCH 60/60)",
+   "split": [
+    "val"
+   ]
+  }
+ ]
+}

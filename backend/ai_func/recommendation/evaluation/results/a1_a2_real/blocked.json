@@ -1,0 +1,8 @@
+{
+  "blocked": true,
+  "reason": "MM_RERANK_* 不齐，T2 阻塞。未发起 GLM 调用。",
+  "have_provider": false,
+  "have_key": false,
+  "have_base": false,
+  "have_model": false
+}

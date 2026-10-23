@@ -1,0 +1,6805 @@
+{
+  "arm": "before",
+  "meta": {
+    "total_cases": 240,
+    "judge": {
+      "provider": "openai",
+      "model": "glm-4-air",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "temperature": 0.0
+    },
+    "elapsed_ms": 4389737.9,
+    "include_extra": true,
+    "catalog": "5-task"
+  },
+  "overall": {
+    "total_cases": 240,
+    "overall_score": 3.457,
+    "pass_rate": 0.5792,
+    "fail_rate": 0.2375,
+    "plan_ok_rate": 0.7917
+  },
+  "scores": {
+    "planning_quality": 3.521,
+    "agent_routing": 3.479,
+    "tool_usage": 3.775,
+    "recovery_behavior": 3.65,
+    "final_result_quality": 2.858
+  },
+  "verdict": {
+    "pass": 139,
+    "flag": 44,
+    "fail": 57
+  },
+  "category_breakdown": {
+    "complex": {
+      "count": 20,
+      "score": 2.94
+    },
+    "multi_agent": {
+      "count": 40,
+      "score": 3.215
+    },
+    "organization": {
+      "count": 65,
+      "score": 2.514
+    },
+    "recovery": {
+      "count": 30,
+      "score": 2.933
+    },
+    "retrieval": {
+      "count": 40,
+      "score": 4.535
+    },
+    "vision": {
+      "count": 45,
+      "score": 4.653
+    }
+  },
+  "task_type_counts": {
+    "analyze_visual": 82,
+    "filter_metadata": 36,
+    "group_images": 64,
+    "retrieve_images": 194,
+    "synthesize": 190
+  },
+  "records": [
+    {
+      "case_id": "bench_1_agent_benchmark_001",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找清晰通透的海边日落图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索和合成任务，顺序合理且符合目标",
+        "仅调用检索agent，任务类型匹配",
+        "工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_002",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找高级灰调的海边日落图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：检索任务由retrieval agent执行，合理。",
+        "工具使用：工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_003",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找自然光影的海边日落图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：仅检索任务被正确路由到retrieval agent，分工合理。",
+        "工具使用：search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_004",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找广角纵深的海边日落图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量优秀：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工正确：仅检索任务被路由到retrieval agent，无需其他agent。",
+        "工具使用完美：search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_005",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找清晰通透的高山湖泊图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，符合用户目标，任务顺序合理，无多余或缺失任务。",
+        "Agent分工：仅检索任务被正确路由到retrieval agent，分工合理。",
+        "工具使用：search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_006",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找高级灰调的高山湖泊图片",
+      "score": 2.2,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "执行过程中所有任务成功完成，但最终状态为 'abort' 且无任何选择结果，表明系统未能达成用户目标",
+        "recovery 行为显示 'replan' 决策，但实际无错误发生（had_error: false），且最终仍以 abort 结束，恢复逻辑不合理",
+        "final_result_quality 为 0，因为 selection_count 为 0，完全未满足用户需求"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_007",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找自然光影的高山湖泊图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索和合成任务，顺序合理且符合目标",
+        "仅调用检索agent，任务类型匹配",
+        "工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_008",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找广角纵深的高山湖泊图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、过滤和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：检索任务由retrieval agent执行，整理任务由organizer agent执行，分工正确。",
+        "工具使用：search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_009",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找清晰通透的现代建筑图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：仅检索Agent被调用，任务类型匹配，分工合理。",
+        "工具使用：工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_010",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找高级灰调的现代建筑图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量优秀：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工正确：检索任务由retrieval agent执行，整理任务由organizer agent执行，分工合理。",
+        "工具使用完美：所有工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_011",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找自然光影的现代建筑图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：仅检索任务被正确路由到retrieval agent，无需其他agent。",
+        "工具使用：search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_012",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找广角纵深的现代建筑图片",
+      "score": 4.4,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成三个必要任务，顺序合理，完全匹配用户目标。",
+        "agent_routing: 仅调用了organizer和retrieval，未调用视觉specialist，分工可能不完整但未导致失败。",
+        "tool_usage: 工具调用100%成功，无异常或失败调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_013",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找清晰通透的工业厂房图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：仅检索任务被正确路由到retrieval agent，分工合理。",
+        "工具使用：search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_014",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找高级灰调的工业厂房图片",
+      "score": 2.2,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "计划任务类型（retrieve_images/filter_metadata/synthesize）基本符合目标，但未明确视觉 Specialist 参与，可能影响结果质量",
+        "Agent 分工中未调用视觉 Specialist，仅使用 organizer 和 retrieval，可能影响图片筛选质量",
+        "工具使用成功（1/1），无失败调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_015",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找自然光影的工业厂房图片",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 4.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索和合成任务，顺序合理，但未明确视觉 Specialist 参与细节",
+        "仅检索 Agent 被调用，任务类型匹配",
+        "工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_016",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找广角纵深的工业厂房图片",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 检索任务由retrieval agent执行合理，但未明确视觉specialist参与广角纵深判断，扣1分。",
+        "tool_usage: search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_017",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找清晰通透的古镇街道图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：仅检索Agent被调用，任务类型匹配，分工合理。",
+        "工具使用：工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_018",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找高级灰调的古镇街道图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：检索任务由retrieval agent执行，合理。",
+        "工具使用：工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_019",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找自然光影的古镇街道图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索和合成任务，符合图片检索目标，顺序合理",
+        "任务正确路由到检索和整理agent，分工合理",
+        "工具调用全部成功，无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_020",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找广角纵深的古镇街道图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、过滤、合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务由retrieval agent执行，整理任务由organizer agent执行，分工合理。",
+        "工具使用：search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_021",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找清晰通透的霓虹夜景图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量优秀：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工正确：仅调用检索Agent，任务类型匹配。",
+        "工具使用完美：1次工具调用成功，无失败或异常。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_022",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找高级灰调的霓虹夜景图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索和合成任务，符合图片检索目标，任务顺序合理",
+        "仅调用检索agent，符合任务类型需求",
+        "工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_023",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找自然光影的霓虹夜景图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索和合成任务，顺序合理且符合目标",
+        "agent_routing 正确，检索任务由 retrieval 和 organizer 完成",
+        "工具使用全部成功，无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_024",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找广角纵深的霓虹夜景图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、过滤、合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务由retrieval agent执行，整理任务由organizer agent执行，分工合理。",
+        "工具使用：search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_025",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找清晰通透的极简室内图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：仅检索Agent被调用，任务类型匹配，分工合理。",
+        "工具使用：工具调用成功（1/1），无错误调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_026",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找高级灰调的极简室内图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，符合用户目标，任务顺序合理，无多余或缺失任务。",
+        "Agent分工：仅检索任务被正确路由到retrieval agent，分工合理。",
+        "工具使用：search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_027",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找自然光影的极简室内图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：检索任务由retrieval agent执行，合理。",
+        "工具使用：工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_028",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找广角纵深的极简室内图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索和合成任务，顺序合理且符合目标",
+        "仅调用检索agent，任务类型匹配",
+        "工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_029",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找清晰通透的美食特写图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索和合成任务，顺序合理且符合用户目标",
+        "仅调用检索agent，任务类型匹配正确",
+        "工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_030",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找高级灰调的美食特写图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，计划未生成",
+        "未执行任何任务，agent和tool调用均为0",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_031",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找自然光影的美食特写图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工：仅检索Agent被调用，任务类型匹配，分工合理。",
+        "工具使用：工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_032",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找广角纵深的美食特写图片",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未明确如何确保广角纵深风格，可能存在任务缺失",
+        "agent_routing: 仅调用检索agent，未涉及视觉或整理agent，分工可能不完整",
+        "tool_usage: 工具调用100%成功，无异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_033",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找清晰通透的森林晨雾图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量优秀：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工正确：仅调用检索Agent，任务类型匹配。",
+        "工具使用完美：1次工具调用成功，无失败或异常。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_034",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找高级灰调的森林晨雾图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量优秀：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工正确：仅调用检索Agent，任务类型匹配。",
+        "工具使用完美：1次工具调用成功，无失败或异常。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_035",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找自然光影的森林晨雾图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索和合成任务，顺序合理且符合目标",
+        "仅调用检索agent，任务类型匹配",
+        "工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_036",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找广角纵深的森林晨雾图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、过滤、合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务由retrieval agent执行，整理任务由organizer agent执行，分工合理。",
+        "工具使用：search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_037",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找清晰通透的城市车流图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量优秀：计划包含检索和合成任务，顺序合理，符合用户目标。",
+        "Agent分工正确：仅调用检索Agent，任务类型匹配。",
+        "工具使用完美：工具调用成功，无失败或异常。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_038",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找高级灰调的城市车流图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量优秀：任务类型（retrieve_images + synthesize）与目标（高级灰调城市车流图片）完全匹配，顺序合理且无多余任务。",
+        "Agent路由正确：仅检索任务被调用，符合单一任务需求。",
+        "工具使用完美：search_images工具调用成功（1/1），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_039",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找自然光影的城市车流图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未调用任何agents和tools，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_040",
+      "arm": "before",
+      "category": "retrieval",
+      "query": "找广角纵深的城市车流图片",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 检索任务由retrieval agent执行合理，但未明确视觉specialist参与，可能影响广角纵深判断。",
+        "tool_usage: search_images工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_001",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后按地点分组整理",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三阶段任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用（未知），分工基本合理但可能不完整。",
+        "tool_usage: 工具调用100%成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_002",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后按拍摄地点分类输出",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三阶段任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用（未知），分工基本合理但可能不完整。",
+        "tool_usage: 工具调用100%成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_003",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后整理成地点相册",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用，分工合理性存疑。",
+        "tool_usage: 工具调用全部成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_004",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后按地点归档",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三阶段任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用（未知），分工基本合理但可能不完整。",
+        "tool_usage: 工具调用100%成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_005",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_006",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "工具调用次数为0，未执行任何检索或分类任务"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_007",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_008",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_009",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "execution 中 executed/succeeded/failed 均为 0，未执行任何任务",
+        "final_state 为 abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_010",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "execution 中 executed/succeeded/failed 均为 0，未执行任何任务",
+        "final_state 为 abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_011",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后整理成地点相册",
+      "score": 4.4,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 检索任务由retrieval agent执行，分组任务由organizer agent执行，分工合理，但未明确视觉specialist调用（可能因任务类型未涉及复杂视觉分析）。",
+        "tool_usage: search_images工具调用成功（1/1），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_012",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_013",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后按地点分组整理",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用（未知），分工基本合理但可能不完整。",
+        "tool_usage: 工具调用全部成功（1/1），无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_014",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后按拍摄地点分类输出",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 4.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "plan 包含 retrieve_images、group_images、synthesize 三阶段任务，顺序合理且与目标匹配，但未明确视觉 specialist 参与，可能影响分类质量",
+        "agents 仅包含 organizer 和 retrieval，未调用视觉 specialist，分工不完整",
+        "工具调用成功（1/1），无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_015",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_016",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后按地点归档",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用（未知），分工基本合理但可能不完整。",
+        "tool_usage: 工具调用全部成功（1/1），无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_017",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后按地点分组整理",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，未提及视觉specialist，但任务类型与agent基本匹配，分工部分合理。",
+        "tool_usage: 工具调用全部成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_018",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后按拍摄地点分类输出",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未提及视觉specialist，可能分工不完整。",
+        "tool_usage: 工具调用成功（1/1），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_019",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_020",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_021",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后按地点分组整理",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用，分工合理性存疑。",
+        "tool_usage: 工具调用全部成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_022",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "execution 中 executed/succeeded/failed 均为 0，未执行任何任务",
+        "final_state 为 abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_023",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "未调用任何agents和tools，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_024",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_025",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_026",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后按拍摄地点分类输出",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用（未知），分工基本合理但可能不完整。",
+        "tool_usage: 工具调用全部成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_027",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_028",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "未调用任何agents和tools，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_029",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后按地点分组整理",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 检索任务由retrieval agent执行，整理任务由organizer agent执行，分工正确。",
+        "tool_usage: 工具调用成功率为100%，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_030",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后按拍摄地点分类输出",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用（未知），分工基本合理但可能不完整。",
+        "tool_usage: 工具调用100%成功，无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_031",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后整理成地点相册",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三阶段任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，未提及visual specialist，但任务类型与agent基本匹配，分工部分合理。",
+        "tool_usage: 工具调用100%成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_032",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后按地点归档",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 检索任务由retrieval agent执行，分组任务由organizer agent执行，分工正确。",
+        "tool_usage: 工具调用成功率为100%，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_033",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后按地点分组整理",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用（未知），分工基本合理但可能不完整。",
+        "tool_usage: 工具调用全部成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_034",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后按拍摄地点分类输出",
+      "score": 3.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 2.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三步，但未明确分组依据是否为location，可能存在任务缺失",
+        "agent_routing: 仅调用organizer和retrieval，未提及视觉specialist，分工不完整",
+        "tool_usage: 工具调用100%成功，无异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_035",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后整理成地点相册",
+      "score": 4.4,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 检索任务由retrieval agent执行合理，但未明确organizer agent在分组任务中的具体分工，评分稍降。",
+        "tool_usage: 工具调用100%成功，无错误调用或空检索。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_036",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后按地点归档",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，但未明确视觉specialist是否被调用（未知），分工基本合理但可能不完整。",
+        "tool_usage: 工具调用100%成功，无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_037",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后按地点分组整理",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，未提及视觉specialist，但任务类型与调用的agent基本匹配，分工合理但可能不完整。",
+        "tool_usage: 工具调用全部成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_038",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "final_state 为 abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_039",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_040",
+      "arm": "before",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后按地点归档",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三阶段任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，未提及视觉specialist，但任务类型与agent基本匹配，分工部分合理。",
+        "tool_usage: 工具调用100%成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_001",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索海边日落图片并分析画面主体内容",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成三个必要任务，顺序合理且全部成功执行",
+        "检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确",
+        "所有工具调用成功（3/3），无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_002",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索海边日落图片并识别画面中的主要属性与元素",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_003",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索海边日落图片并判断图片的风格倾向",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_004",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索海边日落图片并核验图片是否符合任务描述",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_005",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索海边日落图片并判断适合作为壁纸还是海报素材",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且完整覆盖用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_006",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索高山湖泊图片并分析画面主体内容",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成三个必要任务，顺序合理且全部成功执行",
+        "检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确",
+        "所有工具调用成功（3/3），无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_007",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索高山湖泊图片并识别画面中的主要属性与元素",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_008",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索高山湖泊图片并判断图片的风格倾向",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和综合任务，顺序合理且符合目标",
+        "检索和视觉 Specialist 被正确调用",
+        "所有工具调用成功，无错误或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_009",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索高山湖泊图片并核验图片是否符合任务描述",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_010",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索高山湖泊图片并判断适合作为壁纸还是海报素材",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且完整覆盖用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_011",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索现代建筑图片并分析画面主体内容",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成三个必要任务，顺序合理且全部成功执行",
+        "检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确",
+        "所有工具调用成功（3/3），无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_012",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索现代建筑图片并识别画面中的主要属性与元素",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_013",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索现代建筑图片并判断图片的风格倾向",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成三个必要任务，顺序合理且全部成功执行",
+        "检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确",
+        "所有工具调用成功（3/3），无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_014",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索现代建筑图片并核验图片是否符合任务描述",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_015",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索现代建筑图片并判断适合作为壁纸还是海报素材",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_016",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索工业厂房图片并分析画面主体内容",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_017",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索工业厂房图片并识别画面中的主要属性与元素",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_018",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索工业厂房图片并判断图片的风格倾向",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_019",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索工业厂房图片并核验图片是否符合任务描述",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理，符合用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_020",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索工业厂房图片并判断适合作为壁纸还是海报素材",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且完整覆盖用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_021",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索古镇街道图片并分析画面主体内容",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成三个必要任务，顺序合理且全部成功执行",
+        "检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确",
+        "所有工具调用成功（3/3），无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_022",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索古镇街道图片并识别画面中的主要属性与元素",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_023",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索古镇街道图片并判断图片的风格倾向",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成三个必要任务，顺序合理且全部成功执行",
+        "检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确",
+        "所有工具调用成功（3/3），无错误调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_024",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索古镇街道图片并核验图片是否符合任务描述",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_025",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索古镇街道图片并判断适合作为壁纸还是海报素材",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且完整覆盖用户目标（检索图片并判断适合性）。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_026",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并分析画面主体内容",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_027",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并识别画面中的主要属性与元素",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_028",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并判断图片的风格倾向",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_029",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并核验图片是否符合任务描述",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确合理。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_030",
+      "arm": "before",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并判断适合作为壁纸还是海报素材",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且完整覆盖用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_001",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、视觉核验、合成四个任务，顺序合理，但未明确体现'地点分类'的具体步骤，可能遗漏关键细节。",
+        "agent_routing: organizer/retrieval/vision分工合理，任务类型与agent匹配，但未显示具体路由细节。",
+        "tool_usage: 工具调用全部成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_002",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉核验→合成）完全匹配用户目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、整理、视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无异常调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_003",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_004",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 4.8,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉分析→合成）与目标完全匹配，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、分组、视觉分析任务分别由retrieval、organizer、vision agent正确执行，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_005",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "计划任务类型（检索→过滤→分组→视觉分析→合成）基本符合目标，但未明确体现'逐张核验'和'地点分类'的具体步骤，可能存在任务缺失",
+        "Agent分工合理，检索/视觉/organizer均被正确调用",
+        "工具调用全部成功（3/3），无异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_006",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、视觉核验、合成四个任务，顺序合理且覆盖目标需求，无多余或缺失任务。",
+        "agent_routing: 检索、整理、视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_007",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_008",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 4.8,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉分析→合成）完全匹配用户目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、分组、视觉分析任务分别由retrieval、organizer、vision agent正确执行，分工合理。",
+        "tool_usage: 所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_009",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、视觉核验、合成四个任务，顺序合理，但未明确体现地点分类的具体步骤，可能存在任务缺失。",
+        "agent_routing: 检索、整理、视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_010",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（retrieve→group→analyze→synthesize）完全匹配目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索/整理/视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无异常调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_011",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_012",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 4.8,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉分析→合成）与目标完全匹配，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、分组、视觉分析任务分别由retrieval、organizer、vision agent正确执行，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_013",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "selection_count为0，未产生任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_014",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉核验→合成）完全匹配用户目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索/整理/视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_015",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（retrieve→group→analyze→synthesize）完全匹配目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索/整理/视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无异常调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_016",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 4.8,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉分析→合成）与目标完全匹配，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、分组、视觉分析任务分别由retrieval、organizer、vision agent正确执行，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_017",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态显示abort，任务未执行",
+        "工具调用次数为0，无实际操作"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_018",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_019",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉核验→合成）完全匹配用户目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、分组、视觉核验任务分别由 retrieval、organizer、vision agent 正确执行，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_020",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 4.8,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索、分组、视觉分析、合成）与目标完全匹配，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、整理、视觉 Specialist 被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_021",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、视觉核验、合成四个任务，顺序合理，但未明确说明如何实现'地点分类'，可能存在任务缺失。",
+        "agent_routing: 检索、整理、视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_022",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 4.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "plan 包含 retrieve/group/analyze/synthesize 四个任务，顺序合理且覆盖目标需求，但未明确分组逻辑和汇报展示格式要求，扣1分",
+        "agent_routing 正确：retrieval 处理检索，organizer 处理分组，vision 处理视觉分析，分工明确",
+        "tool_usage 全部成功（3/3），无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_023",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉分析→合成）完全匹配用户目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、分组、视觉分析任务分别由retrieval、organizer、vision agent正确执行，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_024",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 4.8,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉分析→合成）与目标完全匹配，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、整理、视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_025",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、视觉核验、合成四个任务，顺序合理，但未明确说明如何实现'地点分类'，可能存在任务缺失。",
+        "agent_routing: 检索、整理、视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_026",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 4.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "计划质量较高，任务顺序合理，但最终仅返回2张图片，与'完整图集'目标存在差距",
+        "Agent分工明确，检索、分组、视觉分析、合成任务均成功执行",
+        "工具调用全部成功，无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_027",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "执行状态为abort，任务被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_028",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划任务类型（检索、分组、视觉分析、合成）与用户目标完全匹配，顺序合理，无多余或缺失任务。",
+        "agent分工正确：检索、整理、视觉 Specialist 均被正确调用，分工合理。",
+        "工具调用全部成功（3/3），无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_029",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_030",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 4.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "plan 包含 retrieve/group/analyze/synthesize 四个任务，顺序合理且覆盖目标需求，但未明确分组标准，扣1分",
+        "agent_routing 正确：检索任务由 retrieval 处理，分组和视觉核验由 organizer 和 vision 完成",
+        "tool_usage 全部成功（3/3），无异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_031",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（retrieve→group→analyze→synthesize）完全匹配目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索/整理/视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无异常调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_032",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 4.8,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉分析→合成）与用户目标完全匹配，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、分组、视觉分析任务分别由retrieval、organizer、vision agent正确执行，分工合理。",
+        "tool_usage: 所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_033",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_034",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、视觉核验、合成四个任务，顺序合理，但未明确说明如何确保图集完整性（如检索数量阈值），可能存在内容不足风险。",
+        "agent_routing: 检索、整理、视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_035",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉分析→合成）完全匹配用户目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、整理、视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_036",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被终止",
+        "selection_count为0，未产出任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_037",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、视觉核验、合成四个任务，符合目标流程，但未明确体现'地点分类'的具体任务，可能存在缺失。",
+        "agent_routing: organizer/retrieval/vision分工合理，任务类型与agent匹配，但未提供具体路由细节。",
+        "tool_usage: 工具调用全部成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_038",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_039",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（retrieve→group→analyze→synthesize）完全匹配目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索/整理/视觉 Specialist 均被正确调用，分工合理。",
+        "tool_usage: 工具调用全部成功（3/3），无异常调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_040",
+      "arm": "before",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 4.8,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划任务类型（检索→分组→视觉分析→合成）完全匹配用户目标，顺序合理，无多余或缺失任务。",
+        "agent_routing: 检索、分组、视觉分析任务分别由retrieval、organizer、vision agent正确执行，分工合理。",
+        "tool_usage: 所有工具调用成功（3/3），无失败或异常调用，工具使用高效。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_001",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索私人渔场的清晨码头的图片",
+      "score": 3.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未体现扩大候选的恢复策略，与验证目标不完全匹配。",
+        "agent_routing: 仅检索被调用，但任务类型与目标一致，分工合理。",
+        "tool_usage: 工具调用全部成功，无错误调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_002",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索废弃矿山的运输轨道的图片",
+      "score": 3.2,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未体现扩大候选的恢复策略，与目标验证场景不完全匹配",
+        "agent_routing: 仅检索被调用，但视觉 Specialist 未参与，分工可能不完整",
+        "tool_usage: 工具调用全部成功，无错误调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_003",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索十九世纪欧洲蒸汽车站的图片",
+      "score": 3.2,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未体现扩大候选的恢复策略，与验证目标部分匹配",
+        "agent_routing: 仅检索被调用，但视觉 Specialist 未参与，分工不完整",
+        "tool_usage: 工具调用全部成功，无错误调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_004",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索深海热泉口的生物的图片",
+      "score": 3.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未体现扩大候选的恢复策略，与验证目标部分匹配。",
+        "agent_routing: 仅检索被调用，但任务类型与路由一致，分工合理。",
+        "tool_usage: 工具调用全部成功，无错误调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_005",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索极地苔原夏季花海的图片",
+      "score": 3.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未体现扩大候选的恢复策略，与目标验证场景不完全匹配",
+        "agent_routing: 仅调用检索agent，但未涉及视觉specialist，分工合理但未完全覆盖多agent场景",
+        "tool_usage: 工具调用100%成功，无异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_006",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索古法手工纸作坊的图片",
+      "score": 3.6,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含两次检索和一次合成，但未明确说明扩大候选的具体策略，任务顺序合理但目标达成度不明确",
+        "agent_routing: 仅检索agent被调用，符合任务类型需求，分工合理",
+        "tool_usage: 4次工具调用全部成功，无错误调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_007",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索楼顶农场大棚的图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含两次检索和一次合成，符合扩大候选并恢复的目标，任务顺序合理。",
+        "Agent分工：仅检索Agent被调用，符合任务需求，分工合理。",
+        "工具使用：4次工具调用全部成功，无错误调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_008",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索古董胶片相机内部的图片",
+      "score": 3.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未体现扩大候选的恢复策略，与目标验证场景不完全匹配",
+        "agent_routing: 仅检索被调用，但视觉 Specialist 未参与，分工可能不完整",
+        "tool_usage: 工具调用全部成功，无错误调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_009",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索城市轻轨高架下的市集的图片",
+      "score": 3.2,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未体现扩大候选的恢复策略，与目标验证场景不完全匹配",
+        "agent_routing: 仅检索agent被调用，但任务类型合理，分工基本正确",
+        "tool_usage: 工具调用全部成功，无错误调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_010",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索溶洞暗河倒影的图片",
+      "score": 3.2,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未体现空结果场景下的候选扩大策略，任务顺序合理但未完全覆盖验证目标",
+        "agent_routing: 仅调用检索agent，未涉及视觉或整理agent，分工不完整",
+        "tool_usage: 工具调用100%成功，无异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_011",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索无人区盐湖星空的图片",
+      "score": 2.6,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan 包含 retrieve_images 和 synthesize 任务，但未体现扩大候选的恢复逻辑",
+        "仅调用 retrieval agent，未涉及视觉或整理 agent，分工不完整",
+        "工具调用成功且无失败"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_012",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索老厂区改造的咖啡馆的图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含3次检索和1次合成，符合扩大候选并恢复的目标，任务顺序合理。",
+        "agent_routing: 所有任务均正确路由到检索agent，分工合理。",
+        "tool_usage: 6次工具调用全部成功，无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_013",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索热带雨林树冠层的图片",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索和合成任务，符合用户目标，任务顺序合理，无多余或缺失任务。",
+        "Agent分工：检索任务正确路由到retrieval agent，分工合理。",
+        "工具使用：工具调用全部成功（2/2），无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_014",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索冰洞蓝光纹理的图片",
+      "score": 3.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未体现扩大候选的恢复策略，与验证目标部分匹配",
+        "agent_routing: 仅调用检索agent，但未涉及视觉specialist，分工合理但未完全覆盖验证场景",
+        "tool_usage: 工具调用100%成功，无异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_015",
+      "arm": "before",
+      "category": "recovery",
+      "query": "搜索手工皮具工坊的图片",
+      "score": 3.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 2.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未体现扩大候选的恢复策略，与验证目标部分匹配",
+        "agent_routing: 仅检索被调用，但视觉 Specialist 未参与，分工不完整",
+        "tool_usage: 工具调用100%成功，无异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_016",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟搜索服务故障获取图片（场景16）",
+      "score": 2.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 3.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为true，但任务t1失败导致t2、t3被跳过，计划未完全执行",
+        "工具调用全部失败（2次失败，0次成功），tool_usage评分较低",
+        "recovery中包含revise和abort，但最终状态为abort，符合场景16的验证目标"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_017",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟检索工具连续不可用（场景17）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_018",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟 MCP 检索服务中断（场景18）",
+      "score": 2.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 4.0,
+        "final_result_quality": 1.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成任务，符合图片检索目标，但任务顺序未考虑工具失败风险，评分中等。",
+        "agent_routing: 检索任务路由到retrieval agent合理，但organizer未参与执行，分工部分合理。",
+        "tool_usage: search_images工具全部失败（2/2），无成功调用，工具使用质量差。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_019",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟远端图片搜索超时（场景19）",
+      "score": 2.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 3.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan 包含 retrieve_images/filter_metadata/synthesize 任务，但 retrieve_images 失败导致后续任务跳过，计划基本合理但未考虑工具失败场景",
+        "agent_routing 正确调用 retrieval 和 organizer，但工具失败后未触发 specialist",
+        "工具使用失败率100%，search_images 两次均失败，但未记录具体错误原因"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_020",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟数据库检索异常重试失败（场景20）",
+      "score": 2.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 3.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为true，但任务t1失败导致t2、t3被跳过，计划未完全执行",
+        "工具调用全部失败（2次失败，0次成功），但未记录具体错误",
+        "recovery中decisions包含revise和abort，但had_error为false，逻辑矛盾"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_021",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟搜索服务故障获取图片（场景21）",
+      "score": 2.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 4.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为true，但任务t1失败导致t2、t3被跳过，计划未完全执行",
+        "工具调用全部失败（2次失败，0次成功），tool_usage评分较低",
+        "recovery行为合理：revise后abort，符合受控中止要求"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_022",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟检索工具连续不可用（场景22）",
+      "score": 2.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 4.0,
+        "final_result_quality": 1.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成任务，符合图片检索目标，但未考虑工具失败场景，评分中等。",
+        "agent_routing: 检索任务路由到retrieval agent合理，但organizer未参与执行，分工部分合理。",
+        "tool_usage: search_images工具连续失败（2次失败，0次成功），工具调用错误率高，但触发了恢复机制。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_023",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟 MCP 检索服务中断（场景23）",
+      "score": 2.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 4.0,
+        "final_result_quality": 1.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成任务，符合目标验证流程，但任务顺序未考虑工具失败风险，评分中等。",
+        "agent_routing: retrieval agent 被正确调用执行检索任务，但 organizer 未参与后续任务，分工部分合理。",
+        "tool_usage: search_images 工具全部失败（2/2），无成功调用，工具使用质量较差。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_024",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟远端图片搜索超时（场景24）",
+      "score": 2.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 4.0,
+        "final_result_quality": 1.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成任务，符合图片检索流程，但未考虑工具失败场景，评分中等。",
+        "agent_routing: 检索任务路由到retrieval agent合理，但organizer未参与执行，分工部分合理。",
+        "tool_usage: search_images工具2次均失败，失败比例高，但触发了恢复机制，评分较低。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_025",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟数据库检索异常重试失败（场景25）",
+      "score": 2.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 3.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为true，但任务t1失败导致t2和t3被跳过，计划未达成目标",
+        "工具调用全部失败（2次失败，0次成功），tool_usage评分较低",
+        "recovery行为包含revise和abort，但最终状态为abort，未在预算内成功恢复"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_026",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟搜索服务故障获取图片（场景26）",
+      "score": 2.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 3.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为true，但任务t1失败导致t2和t3被跳过，计划未实际达成目标",
+        "工具调用全部失败（2次失败，0次成功），tool_usage评分较低",
+        "recovery中包含revise和abort，但最终状态为abort，未在预算内成功恢复"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_027",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟检索工具连续不可用（场景27）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_028",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟 MCP 检索服务中断（场景28）",
+      "score": 2.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 4.0,
+        "final_result_quality": 1.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成任务，符合目标验证流程，但任务顺序未考虑工具失败风险，评分中等。",
+        "agent_routing: 检索任务路由到retrieval agent合理，但organizer未参与执行，分工部分合理。",
+        "tool_usage: search_images工具全部失败（2/2），无成功调用，工具使用质量差。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_029",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟远端图片搜索超时（场景29）",
+      "score": 2.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 4.0,
+        "final_result_quality": 1.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成任务，符合图片检索流程，但未考虑工具失败场景，评分中等。",
+        "agent_routing: 检索任务路由到retrieval agent合理，但organizer未参与执行，分工部分合理。",
+        "tool_usage: search_images工具2次均失败，失败比例高，但触发了恢复机制，评分较低。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_030",
+      "arm": "before",
+      "category": "recovery",
+      "query": "模拟数据库检索异常重试失败（场景30）",
+      "score": 2.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 2.0,
+        "recovery_behavior": 3.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为true，但任务t1失败导致t2、t3被跳过，计划未完成",
+        "工具调用全部失败（2次失败，0次成功），tool_usage评分较低",
+        "recovery中包含revise和abort，但最终状态为abort，未达成goal"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_001",
+      "arm": "before",
+      "category": "complex",
+      "query": "帮我找适合旅游宣传册的图片，并分析哪些最适合",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：任务顺序（检索→分组→视觉分析→综合）完全匹配复杂意图目标，无多余或缺失任务。",
+        "Agent分工：检索/整理/视觉 Specialist 均被正确调用，分工合理。",
+        "工具使用：3次工具调用全部成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_002",
+      "arm": "before",
+      "category": "complex",
+      "query": "帮我找适合旅游宣传册的图片，并分析哪些最适合（结合季节光线偏好）",
+      "score": 4.8,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "plan 包含 retrieve_images、analyze_visual、group_images、synthesize 四个任务，顺序合理且覆盖了旅游宣传册配图需求",
+        "agent_routing 正确：retrieval 负责检索，vision 负责视觉分析，organizer 负责整理与合成",
+        "tool_usage 全部成功（3/3），无错误调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_003",
+      "arm": "before",
+      "category": "complex",
+      "query": "找一套北欧风装修参考图，按房间分类并说明哪些适合墙面装饰",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、视觉分析和合成任务，顺序合理且覆盖用户需求",
+        "agent_routing: 检索、整理和视觉 Specialist 均被正确调用",
+        "tool_usage: 所有工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_004",
+      "arm": "before",
+      "category": "complex",
+      "query": "找一套北欧风装修参考图，按房间分类并说明哪些适合墙面装饰（结合季节光线偏好）",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、视觉分析和合成任务，顺序合理且覆盖用户需求",
+        "agent_routing: 检索、整理、视觉 Specialist 均被正确调用",
+        "tool_usage: 所有工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_005",
+      "arm": "before",
+      "category": "complex",
+      "query": "我需要中学自然课课件的配图：风景要有层次，适合讲解地形",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，未生成任何计划",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_006",
+      "arm": "before",
+      "category": "complex",
+      "query": "我需要中学自然课课件的配图：风景要有层次，适合讲解地形（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，表明规划阶段失败",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具调用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_007",
+      "arm": "before",
+      "category": "complex",
+      "query": "收集适合放在年度总结 PPT 里的城市发展对比图",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：任务顺序（检索→过滤→视觉分析→合成）完全匹配复杂意图需求，无多余或缺失任务。",
+        "Agent分工：检索/整理/视觉 Specialist 均被正确调用，分工合理。",
+        "工具使用：3次工具调用全部成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_008",
+      "arm": "before",
+      "category": "complex",
+      "query": "收集适合放在年度总结 PPT 里的城市发展对比图（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_009",
+      "arm": "before",
+      "category": "complex",
+      "query": "找适合电商详情页首屏的高清产品氛围图并说明推荐理由",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：任务顺序（检索→过滤→视觉分析→合成）完全匹配复杂意图需求，无多余或缺失任务。",
+        "Agent分工：检索/整理/视觉 Specialist 均被正确调用，分工合理。",
+        "工具使用：3次工具调用全部成功，无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_010",
+      "arm": "before",
+      "category": "complex",
+      "query": "找适合电商详情页首屏的高清产品氛围图并说明推荐理由（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_011",
+      "arm": "before",
+      "category": "complex",
+      "query": "找婚礼跟拍风格的样片作为参考，标注哪几张最接近纪实风",
+      "score": 4.8,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、视觉分析、元数据过滤和合成任务，顺序合理且覆盖用户目标",
+        "agent_routing: 检索任务路由到retrieval agent，视觉分析路由到vision agent，分工正确",
+        "tool_usage: 所有工具调用成功，无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_012",
+      "arm": "before",
+      "category": "complex",
+      "query": "找婚礼跟拍风格的样片作为参考，标注哪几张最接近纪实风（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_013",
+      "arm": "before",
+      "category": "complex",
+      "query": "为健身工作室找硬朗风格的环境背景图并核验内容",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理，符合用户目标。",
+        "Agent分工：检索和视觉Agent被正确调用，分工合理。",
+        "工具使用：所有工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_014",
+      "arm": "before",
+      "category": "complex",
+      "query": "为健身工作室找硬朗风格的环境背景图并核验内容（结合季节光线偏好）",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划任务类型（检索、过滤、视觉分析、合成）与用户目标（找图、核验、推荐）完全匹配，顺序合理，无多余或缺失任务。",
+        "agent分工明确：retrieval执行检索，organizer执行过滤，vision执行视觉分析，synthesize执行合成，路由正确。",
+        "工具调用成功（search_images 1/1成功），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_015",
+      "arm": "before",
+      "category": "complex",
+      "query": "找儿童绘本风格的插画用于故事创作参考",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：任务顺序（检索→分析→分组→合成）完全匹配复杂意图需求，无多余或缺失任务。",
+        "Agent分工：检索/视觉/整理Agent均被正确调用，分工合理。",
+        "工具使用：3次工具调用全部成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_016",
+      "arm": "before",
+      "category": "complex",
+      "query": "找儿童绘本风格的插画用于故事创作参考（结合季节光线偏好）",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：任务顺序（检索→分析→分组→合成）完全匹配复杂意图需求，无多余或缺失任务。",
+        "Agent分工：检索/视觉/整理Agent均被正确调用，分工合理。",
+        "工具使用：3次工具调用全部成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_017",
+      "arm": "before",
+      "category": "complex",
+      "query": "为博物馆临时展寻找墙面大幅摄影并给出布展建议",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：任务顺序（检索→过滤→视觉分析→综合）完全匹配博物馆策展需求，无多余或缺失任务。",
+        "Agent分工：检索、整理、视觉 Specialist 均被正确调用，分工合理。",
+        "工具使用：search_images 工具调用成功（1/1），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_018",
+      "arm": "before",
+      "category": "complex",
+      "query": "为博物馆临时展寻找墙面大幅摄影并给出布展建议（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "agents为空，未调用任何Agent",
+        "tools未使用，total为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_019",
+      "arm": "before",
+      "category": "complex",
+      "query": "找能当旅行杂志封面的候选图片，分析哪张最有冲击力",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且plan中无任务，表明规划阶段失败",
+        "execution中executed、succeeded、failed均为0，表明未执行任何任务",
+        "final_state为abort，表明执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_020",
+      "arm": "before",
+      "category": "complex",
+      "query": "找能当旅行杂志封面的候选图片，分析哪张最有冲击力（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "未调用任何agents和tools，无分工与工具使用"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_001",
+      "arm": "before",
+      "category": "organization",
+      "query": "找旅行照片，按地点分组后再每组选2张",
+      "score": 4.2,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含retrieve_images、group_images、synthesize三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval agent，未提及视觉specialist，但任务类型与调用的agent基本匹配，分工合理性未知。",
+        "tool_usage: 工具调用全部成功（1/1），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_002",
+      "arm": "before",
+      "category": "organization",
+      "query": "找城市夜景，按拍摄时间从新到旧排序",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、分组、合成三个必要任务，顺序合理且全部成功执行",
+        "agent分工正确，检索任务由retrieval agent完成",
+        "工具调用成功，无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_003",
+      "arm": "before",
+      "category": "organization",
+      "query": "找建筑照片并去掉重复的同一张",
+      "score": 3.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 2.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未明确体现去重逻辑，任务顺序合理但目标达成度存疑",
+        "agent_routing: 仅调用检索 agent，未调用视觉或整理 agent 处理去重，分工不完整",
+        "tool_usage: 工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_004",
+      "arm": "before",
+      "category": "organization",
+      "query": "找风景图，只要横向 jpg，再按宽度从大到小排",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、元数据过滤和合成任务，顺序合理且符合用户目标",
+        "任务路由正确，检索任务由retrieval agent执行",
+        "工具调用成功，无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_005",
+      "arm": "before",
+      "category": "organization",
+      "query": "找动物照片，选出评分最高的5张",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索和合成任务，但缺少评分和top-n选择任务，导致最终结果数量不足",
+        "仅调用了检索agent，未调用视觉或整理agent，分工不完整",
+        "工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_006",
+      "arm": "before",
+      "category": "organization",
+      "query": "先找海边照片，再按候选和查询的相关度重排",
+      "score": 3.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 2.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但缺少明确的重排任务，与目标'召回后重排'部分不符",
+        "agent_routing: 仅调用检索agent，未调用视觉或整理agent进行重排，分工不完整",
+        "tool_usage: 工具调用100%成功，无异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_007",
+      "arm": "before",
+      "category": "organization",
+      "query": "找2025年旅行照，按地点分组后每组留1张",
+      "score": 2.4,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 1.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "计划任务类型（retrieve/filter/group/synthesize）基本匹配目标，但未明确分组后选择逻辑",
+        "agent分工未体现视觉specialist，但检索和整理任务成功完成",
+        "工具调用全部成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_008",
+      "arm": "before",
+      "category": "organization",
+      "query": "找已有标签包含旅行的照片并按年份整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_009",
+      "arm": "before",
+      "category": "organization",
+      "query": "找宽度至少1920的图片，再按标题字母序排列",
+      "score": 3.6,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成任务，但未明确体现宽度过滤和排序的具体逻辑，任务顺序合理但细节缺失。",
+        "agent_routing: 仅调用了organizer和retrieval，未提及视觉specialist，但任务类型与调用的agent基本匹配。",
+        "tool_usage: 工具调用100%成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_010",
+      "arm": "before",
+      "category": "organization",
+      "query": "找室内照片，去掉重复后再选3张",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但未明确包含去重步骤，可能导致去重目标未完全达成",
+        "agent_routing: 仅调用了检索agent，但合成任务未明确指定视觉specialist，分工合理性存疑",
+        "tool_usage: 工具调用100%成功，无异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_011",
+      "arm": "before",
+      "category": "vision",
+      "query": "找花卉照片并确认画面里确实有红色花朵",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成三个必要任务，顺序合理且全部成功执行",
+        "检索和视觉 Specialist 被正确调用，分工合理",
+        "所有工具调用成功，无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_012",
+      "arm": "before",
+      "category": "vision",
+      "query": "找派对候选，再判断画面中是否看得见生日蛋糕",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成三个必要任务，顺序合理且全部成功执行",
+        "检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确",
+        "所有工具调用成功（3/3），无失败或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_013",
+      "arm": "before",
+      "category": "vision",
+      "query": "找人像再确认哪些人物眼睛清晰可见",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成任务，顺序合理且符合目标",
+        "检索和视觉 Specialist 被正确调用，分工合理",
+        "所有工具调用成功，无错误或异常调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_014",
+      "arm": "before",
+      "category": "vision",
+      "query": "找横向JPG，再确认画面里有海滩",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，未执行任何操作"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_015",
+      "arm": "before",
+      "category": "vision",
+      "query": "找商品图，比较包装主色是不是蓝色",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成任务，顺序合理且符合目标",
+        "检索和视觉Agent被正确调用，分工合理",
+        "所有工具调用成功，无错误或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_016",
+      "arm": "before",
+      "category": "vision",
+      "query": "找建筑照片，再比较哪几张构图更对称",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_017",
+      "arm": "before",
+      "category": "vision",
+      "query": "找旅行照并确认画面里同时有山和湖",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_018",
+      "arm": "before",
+      "category": "vision",
+      "query": "找2025年照片，再确认画面中有人骑马",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且符合用户目标（年份过滤加骑马核验）。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功（3/3），无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_019",
+      "arm": "before",
+      "category": "organization",
+      "query": "找夜景，只要最相关的前8张",
+      "score": 3.6,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索和合成任务，但合成任务未明确说明如何实现'截断选择前8张'，计划部分缺失关键步骤",
+        "仅调用了检索agent，未涉及视觉或整理agent，分工可能不完整",
+        "工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_020",
+      "arm": "before",
+      "category": "organization",
+      "query": "找猫的照片，按文件类型分类",
+      "score": 3.6,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成任务，顺序合理，但未明确按文件类型分类的具体逻辑，可能存在执行细节缺失。",
+        "agent_routing: 仅调用了organizer和retrieval，未涉及视觉specialist，分工可能不完整。",
+        "tool_usage: 工具调用100%成功，无异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_021",
+      "arm": "before",
+      "category": "organization",
+      "query": "找风景照，先过滤竖图再按时间排序",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_022",
+      "arm": "before",
+      "category": "organization",
+      "query": "找街道照片去重，再按地点分组",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个任务，顺序合理且符合用户目标，无多余或缺失任务。",
+        "agent_routing: 检索任务由retrieval agent执行，分组任务由organizer agent执行，分工正确。",
+        "tool_usage: 工具调用全部成功（1/1），无错误调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_023",
+      "arm": "before",
+      "category": "organization",
+      "query": "找美食图，按相关度重排后选前4张",
+      "score": 3.6,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索和合成任务，但缺少按相关度重排的明确任务，与目标部分匹配",
+        "agent_routing: 仅调用检索agent，未调用视觉或整理agent分工不完整",
+        "tool_usage: 工具调用100%成功，无异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_024",
+      "arm": "before",
+      "category": "organization",
+      "query": "找已有旅行标签的横向照片并整理到各地分组",
+      "score": 4.6,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成三个必要任务，顺序合理，完全匹配目标需求。",
+        "agent_routing: 检索任务由retrieval agent执行合理，但organizer未明确处理分组任务，分工略有不足。",
+        "tool_usage: 工具调用100%成功，无异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_025",
+      "arm": "before",
+      "category": "organization",
+      "query": "找湖景，按高度从高到低排序后选3张",
+      "score": 3.8,
+      "dimension_scores": {
+        "planning_quality": 3.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 2.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成任务，但未明确体现按高度排序的步骤，任务顺序部分合理但缺失关键排序逻辑。",
+        "agent_routing: 检索任务由retrieval agent执行合理，但organizer agent未明确处理排序任务，分工存在模糊性。",
+        "tool_usage: 工具调用100%成功，无异常调用，使用质量优秀。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_026",
+      "arm": "before",
+      "category": "vision",
+      "query": "找婚礼照片并核验画面是否有蛋糕",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成三个任务，顺序合理且完整覆盖目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析路由到vision agent，分工正确。",
+        "工具使用：所有3次工具调用均成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_027",
+      "arm": "before",
+      "category": "vision",
+      "query": "找儿童室内照，再识别画面中是否真的有儿童",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划质量：计划包含检索、视觉分析和合成任务，顺序合理且符合用户目标。",
+        "Agent分工：检索任务路由到retrieval agent，视觉分析任务路由到vision agent，分工正确。",
+        "工具使用：所有工具调用成功，无失败或异常调用。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_028",
+      "arm": "before",
+      "category": "vision",
+      "query": "找阴天风景，再判断天空是否阴沉",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成任务，顺序合理且覆盖目标需求",
+        "检索和视觉 Specialist 被正确调用，分工合理",
+        "所有工具调用成功，无错误或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_029",
+      "arm": "before",
+      "category": "vision",
+      "query": "找宽图并判断构图是否适合做横幅",
+      "score": 4.4,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 4.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、过滤、合成三阶段任务，顺序合理且符合目标，无多余或缺失任务。",
+        "agent_routing: 仅调用了organizer和retrieval，未提及视觉specialist，但任务类型与agent基本匹配，分工部分合理。",
+        "tool_usage: 工具调用100%成功，无异常调用或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_030",
+      "arm": "before",
+      "category": "vision",
+      "query": "找自行车照片，确认能不能看见红色自行车",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、视觉分析和合成三个必要任务，顺序合理且全部成功执行",
+        "检索任务路由到retrieval agent，视觉分析路由到vision agent，分工正确",
+        "所有工具调用成功（3/3），无错误调用"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_031",
+      "arm": "before",
+      "category": "organization",
+      "query": "找雪景，按地点分组后每组推荐1张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "selection_count为0，未产生任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_032",
+      "arm": "before",
+      "category": "organization",
+      "query": "找博物馆展品图，去掉重复id再按时间排",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中所有任务未执行，succeeded和failed均为0",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_033",
+      "arm": "before",
+      "category": "organization",
+      "query": "找咖啡馆照片，只要jpg并且按相关度重排",
+      "score": 5.0,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 5.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 5.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "计划包含检索、过滤、合成三个必要任务，顺序合理且全部成功执行",
+        "agent_routing 正确：retrieval 和 organizer 分别处理检索和过滤任务",
+        "tool_usage 完美：search_images 工具调用成功，无失败或异常"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_034",
+      "arm": "before",
+      "category": "organization",
+      "query": "找日落，选出最相关的6张不要分组",
+      "score": 3.2,
+      "dimension_scores": {
+        "planning_quality": 2.0,
+        "agent_routing": 3.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 1.0
+      },
+      "verdict": "flag",
+      "judge_reason": [
+        "planning_quality: 计划仅包含检索和合成任务，但未包含选择任务，无法满足'选出最相关的6张'的目标",
+        "agent_routing: 仅调用了检索agent，未调用视觉或整理agent分工不完整",
+        "tool_usage: 工具调用成功且无失败"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_035",
+      "arm": "before",
+      "category": "organization",
+      "query": "找山脉照片并按年份整理，再每组留2张",
+      "score": 4.4,
+      "dimension_scores": {
+        "planning_quality": 5.0,
+        "agent_routing": 4.0,
+        "tool_usage": 5.0,
+        "recovery_behavior": 5.0,
+        "final_result_quality": 3.0
+      },
+      "verdict": "pass",
+      "judge_reason": [
+        "planning_quality: 计划包含检索、分组、合成三个必要任务，顺序合理，完全匹配目标。",
+        "agent_routing: 检索任务由retrieval执行，分组任务由organizer执行，分工合理；但未明确视觉Specialist调用，可能遗漏细节处理。",
+        "tool_usage: 工具调用100%成功，无异常或失败。"
+      ],
+      "judge_error": null,
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 2
+    },
+    {
+      "case_id": "ab_extra_036",
+      "arm": "before",
+      "category": "organization",
+      "query": "找古镇街道，过滤已有标签后再按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "flag",
+      "judge_reason": [],
+      "judge_error": "LLMClientError: Judge LLM 请求失败（重试 2 次后）：ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "synthesize"
+      ],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_037",
+      "arm": "before",
+      "category": "vision",
+      "query": "找桌面静物，确认画面里有没有咖啡杯",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "flag",
+      "judge_reason": [],
+      "judge_error": "LLMClientError: Judge LLM 请求失败（重试 2 次后）：ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_038",
+      "arm": "before",
+      "category": "organization",
+      "query": "找夜市照片，重排后去掉重复再选5张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "flag",
+      "judge_reason": [],
+      "judge_error": "LLMClientError: Judge LLM 请求失败（重试 2 次后）：ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_039",
+      "arm": "before",
+      "category": "vision",
+      "query": "找海边人物照，先按时间排序再确认哪些能看见人脸",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "flag",
+      "judge_reason": [],
+      "judge_error": "LLMClientError: Judge LLM 请求失败（重试 2 次后）：ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_040",
+      "arm": "before",
+      "category": "organization",
+      "query": "找火车照片，按文件类型分类并每类选1张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "flag",
+      "judge_reason": [],
+      "judge_error": "LLMClientError: Judge LLM 请求失败（重试 2 次后）：ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    }
+  ]
+}

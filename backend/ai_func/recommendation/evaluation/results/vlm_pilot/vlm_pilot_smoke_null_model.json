@@ -1,0 +1,87 @@
+{
+  "blocked": false,
+  "provider": "deepseek",
+  "model": "deepseek-v4-flash-vision-exp",
+  "config_yaml_untouched": true,
+  "n": 2,
+  "gate_team_rate": 1.0,
+  "assertion_success_rate": 0.0,
+  "stage_latency": {
+    "vlm": {
+      "n": 2,
+      "mean_ms": 413.646,
+      "p50_ms": 413.646,
+      "p95_ms": 639.119,
+      "p99_ms": 659.161,
+      "max_ms": 664.172
+    }
+  },
+  "mean_query_ms": 7429.9,
+  "note": "决策看 assertion_success_rate 与延迟，不看 Judge。",
+  "records": [
+    {
+      "id": "v01",
+      "query": "找派对照片，再确认画面中是否有生日蛋糕",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": false,
+      "ms": 14441.5,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 18,
+          "passed": false,
+          "status": "failed",
+          "error": "图像分析服务错误: Error code: 400 - {'error': {'message': 'The supported API model names are deepseek-flash, deepseek-v4-pro, but you passed null.', 'type': 'invalid_re"
+        },
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "failed",
+          "error": "图像分析服务错误: Error code: 400 - {'error': {'message': 'The supported API model names are deepseek-flash, deepseek-v4-pro, but you passed null.', 'type': 'invalid_re"
+        }
+      ]
+    },
+    {
+      "id": "v02",
+      "query": "找候选照片，再判断是否能看见红色自行车",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": false,
+      "ms": 418.2,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1163,
+          "passed": false,
+          "status": "failed",
+          "error": "图像分析服务错误: Error code: 400 - {'error': {'message': 'The supported API model names are deepseek-flash, deepseek-v4-pro, but you passed null.', 'type': 'invalid_re"
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "failed",
+          "error": "图像分析服务错误: Error code: 400 - {'error': {'message': 'The supported API model names are deepseek-flash, deepseek-v4-pro, but you passed null.', 'type': 'invalid_re"
+        }
+      ]
+    }
+  ],
+  "gate": [
+    {
+      "id": "v01",
+      "query": "找派对照片，再确认画面中是否有生日蛋糕",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v02",
+      "query": "找候选照片，再判断是否能看见红色自行车",
+      "got": "team",
+      "ok": true
+    }
+  ]
+}

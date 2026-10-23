@@ -1,0 +1,1133 @@
+{
+  "blocked": false,
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "config_yaml_untouched": true,
+  "n": 36,
+  "gate_team_rate": 1.0,
+  "assertion_success_rate": 1.0,
+  "stage_latency": {
+    "vlm": {
+      "n": 36,
+      "mean_ms": 30836.949,
+      "p50_ms": 24820.249,
+      "p95_ms": 67080.61,
+      "p99_ms": 109266.432,
+      "max_ms": 115920.68
+    }
+  },
+  "mean_query_ms": 31324.0,
+  "note": "决策看 assertion_success_rate 与延迟，不看 Judge。",
+  "records": [
+    {
+      "id": "v01",
+      "query": "找派对照片，再确认画面中是否有生日蛋糕",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 27816.3,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 18,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v02",
+      "query": "找候选照片，再判断是否能看见红色自行车",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 23818.9,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1163,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v03",
+      "query": "找室内照片，再识别画面中是否有儿童",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 39148.4,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v04",
+      "query": "找风景照片，再判断天空是否阴沉",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 29248.7,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v05",
+      "query": "先找建筑照片，再比较哪几张构图最对称",
+      "kind": "analyze",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 25924.1,
+      "retrieved": 2,
+      "items": [
+        {
+          "id": 1163,
+          "status": "VisionStatus.SUCCESS",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "status": "VisionStatus.SUCCESS",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v06",
+      "query": "找人像候选，然后判断哪些人物眼睛清晰可见",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 20349.4,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 18,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 46,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v07",
+      "query": "找商品照片，再比较包装主色是否为蓝色",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 30222.1,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v08",
+      "query": "找旅行照片，再确认哪些画面里确实同时有山和湖",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 33233.2,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v09",
+      "query": "找 2025 年照片，再确认画面中有人骑马",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 21307.6,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 18,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 4,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v10",
+      "query": "从横向 JPG 照片中找出画面有海滩的，再推荐",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 21774.5,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v11",
+      "query": "先按已有旅行标签筛选，再确认哪些照片有雪山",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 22861.7,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v12",
+      "query": "找宽度至少 1920 的图片，再判断构图是否适合横幅",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 42424.6,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 18,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 63,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v13",
+      "query": "找动物照片，再确认画面中是否有狗",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 23317.3,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v14",
+      "query": "找交通工具照片，再判断是否能看见公交车",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 97079.7,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v15",
+      "query": "找户外照片，再识别画面中是否有自行车",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 40104.2,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v16",
+      "query": "找街道照片，再确认画面里有没有汽车",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 38233.5,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v17",
+      "query": "找室内照片，再判断是否能看见椅子",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 116131.5,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v18",
+      "query": "找餐桌照片，再确认画面中是否有瓶子",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 27791.5,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1163,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v19",
+      "query": "找客厅照片，再判断画面中是否有沙发",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 24623.2,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v20",
+      "query": "找风景照片，再确认画面里有没有树",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 26983.5,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v21",
+      "query": "找天空照片，再判断是否能看见飞机",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 29469.4,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v22",
+      "query": "找水面照片，再确认画面中是否有船",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 25332.1,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v23",
+      "query": "找草地照片，再识别画面中是否有马",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 20668.9,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v24",
+      "query": "找厨房照片，再判断是否能看见杯子",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 20674.6,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v25",
+      "query": "找宠物照片，再确认画面中是否有猫",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 31908.6,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v26",
+      "query": "找车站照片，再判断画面里有没有火车",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 30801.9,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v27",
+      "query": "找人物照片，再确认哪些人脸清晰可见",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 18081.2,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1163,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v28",
+      "query": "找城市照片，再比较哪几张构图最对称",
+      "kind": "analyze",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 18592.3,
+      "retrieved": 2,
+      "items": [
+        {
+          "id": 18,
+          "status": "VisionStatus.SUCCESS",
+          "error": ""
+        },
+        {
+          "id": 1161,
+          "status": "VisionStatus.SUCCESS",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v29",
+      "query": "找花卉照片，再判断主色是否偏红",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 18001.9,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v30",
+      "query": "找夜景照片，再确认画面中有没有灯",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 24156.1,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v31",
+      "query": "找桌面照片，再识别画面中是否有键盘",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 21684.3,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v32",
+      "query": "找户外照片，再判断天空是否晴朗",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 20466.5,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v33",
+      "query": "找动物照片，再确认画面里确实有鸟",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 21805.8,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1162,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v34",
+      "query": "找街道照片，再判断是否能看见行人",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 19112.4,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1163,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v35",
+      "query": "找建筑照片，再确认窗户清晰可见",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 57278.6,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 18,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 4,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    },
+    {
+      "id": "v36",
+      "query": "找食物照片，再判断画面中是否有盘子",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 17234.2,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1164,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "gate": [
+    {
+      "id": "v01",
+      "query": "找派对照片，再确认画面中是否有生日蛋糕",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v02",
+      "query": "找候选照片，再判断是否能看见红色自行车",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v03",
+      "query": "找室内照片，再识别画面中是否有儿童",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v04",
+      "query": "找风景照片，再判断天空是否阴沉",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v05",
+      "query": "先找建筑照片，再比较哪几张构图最对称",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v06",
+      "query": "找人像候选，然后判断哪些人物眼睛清晰可见",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v07",
+      "query": "找商品照片，再比较包装主色是否为蓝色",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v08",
+      "query": "找旅行照片，再确认哪些画面里确实同时有山和湖",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v09",
+      "query": "找 2025 年照片，再确认画面中有人骑马",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v10",
+      "query": "从横向 JPG 照片中找出画面有海滩的，再推荐",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v11",
+      "query": "先按已有旅行标签筛选，再确认哪些照片有雪山",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v12",
+      "query": "找宽度至少 1920 的图片，再判断构图是否适合横幅",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v13",
+      "query": "找动物照片，再确认画面中是否有狗",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v14",
+      "query": "找交通工具照片，再判断是否能看见公交车",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v15",
+      "query": "找户外照片，再识别画面中是否有自行车",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v16",
+      "query": "找街道照片，再确认画面里有没有汽车",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v17",
+      "query": "找室内照片，再判断是否能看见椅子",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v18",
+      "query": "找餐桌照片，再确认画面中是否有瓶子",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v19",
+      "query": "找客厅照片，再判断画面中是否有沙发",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v20",
+      "query": "找风景照片，再确认画面里有没有树",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v21",
+      "query": "找天空照片，再判断是否能看见飞机",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v22",
+      "query": "找水面照片，再确认画面中是否有船",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v23",
+      "query": "找草地照片，再识别画面中是否有马",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v24",
+      "query": "找厨房照片，再判断是否能看见杯子",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v25",
+      "query": "找宠物照片，再确认画面中是否有猫",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v26",
+      "query": "找车站照片，再判断画面里有没有火车",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v27",
+      "query": "找人物照片，再确认哪些人脸清晰可见",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v28",
+      "query": "找城市照片，再比较哪几张构图最对称",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v29",
+      "query": "找花卉照片，再判断主色是否偏红",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v30",
+      "query": "找夜景照片，再确认画面中有没有灯",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v31",
+      "query": "找桌面照片，再识别画面中是否有键盘",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v32",
+      "query": "找户外照片，再判断天空是否晴朗",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v33",
+      "query": "找动物照片，再确认画面里确实有鸟",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v34",
+      "query": "找街道照片，再判断是否能看见行人",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v35",
+      "query": "找建筑照片，再确认窗户清晰可见",
+      "got": "team",
+      "ok": true
+    },
+    {
+      "id": "v36",
+      "query": "找食物照片，再判断画面中是否有盘子",
+      "got": "team",
+      "ok": true
+    }
+  ]
+}

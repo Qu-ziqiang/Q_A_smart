@@ -1,0 +1,2627 @@
+{
+  "model": "glm-4v-flash",
+  "tau": 0.006,
+  "n": 70,
+  "trigger_rate": 0.3143,
+  "fallback_n": 0,
+  "macro": {
+    "baseline": {
+      "hit1": 0.7681,
+      "hit3": 0.942,
+      "hit5": 0.9855,
+      "mrr": 0.8572,
+      "p5": 0.7072,
+      "n": 69
+    },
+    "always_r2": {
+      "hit1": 0.8986,
+      "hit3": 0.9855,
+      "hit5": 1.0,
+      "mrr": 0.9377,
+      "p5": 0.8116,
+      "n": 69
+    },
+    "a2": {
+      "hit1": 0.8116,
+      "hit3": 0.9565,
+      "hit5": 0.9855,
+      "mrr": 0.8825,
+      "p5": 0.7275,
+      "n": 69
+    }
+  },
+  "macro_triggered_only": {
+    "n": 22,
+    "baseline": {
+      "hit1": 0.8636,
+      "hit3": 0.9545,
+      "hit5": 1.0,
+      "mrr": 0.9205,
+      "p5": 0.8182,
+      "n": 22
+    },
+    "always_r2": {
+      "hit1": 1.0,
+      "hit3": 1.0,
+      "hit5": 1.0,
+      "mrr": 1.0,
+      "p5": 0.8818,
+      "n": 22
+    },
+    "a2": {
+      "hit1": 1.0,
+      "hit3": 1.0,
+      "hit5": 1.0,
+      "mrr": 1.0,
+      "p5": 0.8818,
+      "n": 22
+    }
+  },
+  "macro_skipped_only": {
+    "n": 48,
+    "baseline": {
+      "hit1": 0.7234,
+      "hit3": 0.9362,
+      "hit5": 0.9787,
+      "mrr": 0.8275,
+      "p5": 0.6553,
+      "n": 47
+    },
+    "always_r2": {
+      "hit1": 0.8511,
+      "hit3": 0.9787,
+      "hit5": 1.0,
+      "mrr": 0.9085,
+      "p5": 0.7787,
+      "n": 47
+    },
+    "a2": {
+      "hit1": 0.7234,
+      "hit3": 0.9362,
+      "hit5": 0.9787,
+      "mrr": 0.8275,
+      "p5": 0.6553,
+      "n": 47
+    }
+  },
+  "latency": {
+    "always_r2_mean_ms": 12559.4,
+    "always_r2_p50_ms": 12139.9,
+    "always_r2_p95_ms": 15364.0,
+    "a2_mean_ms": 3999.7,
+    "a2_p50_ms": 0.0,
+    "a2_p95_ms": 14252.0,
+    "note": "A2 未触发记 0ms（保持 CLIP 序）；触发则逐张 GLM-4V。glm-4v-flash 不支持 10 图 batch。"
+  },
+  "rows": [
+    {
+      "id": "q001",
+      "query": "公交车的照片",
+      "kind": "single",
+      "class": "bus",
+      "gt_in_pool": 10,
+      "gap": 0.010814,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11522.8,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q002",
+      "query": "摩托车的照片",
+      "kind": "single",
+      "class": "motorbike",
+      "gt_in_pool": 10,
+      "gap": 0.010956,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 13507.1,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q003",
+      "query": "椅子的照片",
+      "kind": "single",
+      "class": "chair",
+      "gt_in_pool": 8,
+      "gap": 0.011681,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.8,
+        "first_rank": 2
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.8,
+        "first_rank": 2
+      },
+      "r2_ms": 15236.9,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q004",
+      "query": "汽车的照片",
+      "kind": "single",
+      "class": "car",
+      "gt_in_pool": 8,
+      "gap": 0.001686,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "r2_ms": 13233.0,
+      "a2_ms": 13233.0,
+      "fallback": false
+    },
+    {
+      "id": "q005",
+      "query": "沙发的照片",
+      "kind": "single",
+      "class": "sofa",
+      "gt_in_pool": 7,
+      "gap": 0.017431,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 14412.4,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q006",
+      "query": "火车的照片",
+      "kind": "single",
+      "class": "train",
+      "gt_in_pool": 10,
+      "gap": 0.005802,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 12229.2,
+      "a2_ms": 12229.2,
+      "fallback": false
+    },
+    {
+      "id": "q007",
+      "query": "牛的照片",
+      "kind": "single",
+      "class": "cow",
+      "gt_in_pool": 10,
+      "gap": 0.010316,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11407.7,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q008",
+      "query": "猫的照片",
+      "kind": "single",
+      "class": "cat",
+      "gt_in_pool": 10,
+      "gap": 0.008005,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11844.0,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q009",
+      "query": "瓶子的照片",
+      "kind": "single",
+      "class": "bottle",
+      "gt_in_pool": 8,
+      "gap": 0.01432,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "r2_ms": 11945.4,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q010",
+      "query": "电视或显示器的照片",
+      "kind": "single",
+      "class": "tvmonitor",
+      "gt_in_pool": 6,
+      "gap": 0.016242,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "r2_ms": 11612.9,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q011",
+      "query": "盆栽的照片",
+      "kind": "single",
+      "class": "pottedplant",
+      "gt_in_pool": 8,
+      "gap": 0.007012,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "r2_ms": 13267.0,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q012",
+      "query": "羊的照片",
+      "kind": "single",
+      "class": "sheep",
+      "gt_in_pool": 10,
+      "gap": 0.00215,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 14727.7,
+      "a2_ms": 14727.7,
+      "fallback": false
+    },
+    {
+      "id": "q013",
+      "query": "自行车的照片",
+      "kind": "single",
+      "class": "bicycle",
+      "gt_in_pool": 8,
+      "gap": 0.0055,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 12398.9,
+      "a2_ms": 12398.9,
+      "fallback": false
+    },
+    {
+      "id": "q014",
+      "query": "船的照片",
+      "kind": "single",
+      "class": "boat",
+      "gt_in_pool": 10,
+      "gap": 0.00955,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 12421.9,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q015",
+      "query": "飞机的照片",
+      "kind": "single",
+      "class": "aeroplane",
+      "gt_in_pool": 10,
+      "gap": 0.003399,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11057.2,
+      "a2_ms": 11057.2,
+      "fallback": false
+    },
+    {
+      "id": "q016",
+      "query": "餐桌的照片",
+      "kind": "single",
+      "class": "diningtable",
+      "gt_in_pool": 9,
+      "gap": 0.006523,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "r2_ms": 11608.5,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q017",
+      "query": "马的照片",
+      "kind": "single",
+      "class": "horse",
+      "gt_in_pool": 9,
+      "gap": 0.00698,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11395.7,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q018",
+      "query": "鸟的照片",
+      "kind": "single",
+      "class": "bird",
+      "gt_in_pool": 9,
+      "gap": 0.009174,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 13442.3,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q019",
+      "query": "找几张飞机",
+      "kind": "single",
+      "class": "aeroplane",
+      "gt_in_pool": 10,
+      "gap": 0.006453,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11878.5,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q020",
+      "query": "找几张自行车",
+      "kind": "single",
+      "class": "bicycle",
+      "gt_in_pool": 8,
+      "gap": 0.007107,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11579.7,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q021",
+      "query": "找几张鸟",
+      "kind": "single",
+      "class": "bird",
+      "gt_in_pool": 9,
+      "gap": 0.005749,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 14252.0,
+      "a2_ms": 14252.0,
+      "fallback": false
+    },
+    {
+      "id": "q022",
+      "query": "找几张船",
+      "kind": "single",
+      "class": "boat",
+      "gt_in_pool": 10,
+      "gap": 0.00926,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 13737.4,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q023",
+      "query": "找几张瓶子",
+      "kind": "single",
+      "class": "bottle",
+      "gt_in_pool": 8,
+      "gap": 0.014096,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 12260.5,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q024",
+      "query": "找几张公交车",
+      "kind": "single",
+      "class": "bus",
+      "gt_in_pool": 10,
+      "gap": 0.004593,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 12837.3,
+      "a2_ms": 12837.3,
+      "fallback": false
+    },
+    {
+      "id": "q025",
+      "query": "找几张汽车",
+      "kind": "single",
+      "class": "car",
+      "gt_in_pool": 7,
+      "gap": 0.001554,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "r2_ms": 12279.5,
+      "a2_ms": 12279.5,
+      "fallback": false
+    },
+    {
+      "id": "q026",
+      "query": "找几张猫",
+      "kind": "single",
+      "class": "cat",
+      "gt_in_pool": 9,
+      "gap": 0.003365,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 12122.2,
+      "a2_ms": 12122.2,
+      "fallback": false
+    },
+    {
+      "id": "q027",
+      "query": "找几张椅子",
+      "kind": "single",
+      "class": "chair",
+      "gt_in_pool": 6,
+      "gap": 0.011261,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.6,
+        "first_rank": 2
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.6,
+        "first_rank": 2
+      },
+      "r2_ms": 12922.7,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q028",
+      "query": "找几张牛",
+      "kind": "single",
+      "class": "cow",
+      "gt_in_pool": 9,
+      "gap": 0.012462,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 13249.0,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q029",
+      "query": "找几张餐桌",
+      "kind": "single",
+      "class": "diningtable",
+      "gt_in_pool": 8,
+      "gap": 0.006768,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "r2_ms": 11343.2,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q030",
+      "query": "狗的照片",
+      "kind": "single",
+      "class": "dog",
+      "gt_in_pool": 9,
+      "gap": 0.004131,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 12739.4,
+      "a2_ms": 12739.4,
+      "fallback": false
+    },
+    {
+      "id": "q031",
+      "query": "找几张狗",
+      "kind": "single",
+      "class": "dog",
+      "gt_in_pool": 9,
+      "gap": 0.001878,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11529.2,
+      "a2_ms": 11529.2,
+      "fallback": false
+    },
+    {
+      "id": "q032",
+      "query": "找几张马",
+      "kind": "single",
+      "class": "horse",
+      "gt_in_pool": 9,
+      "gap": 0.00293,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 12995.8,
+      "a2_ms": 12995.8,
+      "fallback": false
+    },
+    {
+      "id": "q033",
+      "query": "找几张摩托车",
+      "kind": "single",
+      "class": "motorbike",
+      "gt_in_pool": 10,
+      "gap": 0.00516,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11309.4,
+      "a2_ms": 11309.4,
+      "fallback": false
+    },
+    {
+      "id": "q034",
+      "query": "人的照片",
+      "kind": "single",
+      "class": "person",
+      "gt_in_pool": 8,
+      "gap": 0.004706,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 13470.1,
+      "a2_ms": 13470.1,
+      "fallback": false
+    },
+    {
+      "id": "q035",
+      "query": "找几张人",
+      "kind": "single",
+      "class": "person",
+      "gt_in_pool": 6,
+      "gap": 0.006959,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.4,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.4,
+        "first_rank": 1
+      },
+      "r2_ms": 10995.1,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q036",
+      "query": "找几张盆栽",
+      "kind": "single",
+      "class": "pottedplant",
+      "gt_in_pool": 6,
+      "gap": 0.003013,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 10780.7,
+      "a2_ms": 10780.7,
+      "fallback": false
+    },
+    {
+      "id": "q037",
+      "query": "找几张羊",
+      "kind": "single",
+      "class": "sheep",
+      "gt_in_pool": 10,
+      "gap": 0.006777,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 10872.1,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q038",
+      "query": "找几张沙发",
+      "kind": "single",
+      "class": "sofa",
+      "gt_in_pool": 8,
+      "gap": 0.017162,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 10839.9,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q039",
+      "query": "找几张火车",
+      "kind": "single",
+      "class": "train",
+      "gt_in_pool": 10,
+      "gap": 0.004294,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 10703.5,
+      "a2_ms": 10703.5,
+      "fallback": false
+    },
+    {
+      "id": "q040",
+      "query": "电视的照片",
+      "kind": "single",
+      "class": "tvmonitor",
+      "gt_in_pool": 5,
+      "gap": 0.012524,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11576.9,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q041",
+      "query": "找几张电视",
+      "kind": "single",
+      "class": "tvmonitor",
+      "gt_in_pool": 4,
+      "gap": 0.011682,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "r2_ms": 13694.9,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q042",
+      "query": "骑摩托车的人的照片",
+      "kind": "pair",
+      "class": "motorbike+person",
+      "gt_in_pool": 8,
+      "gap": 0.008682,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 11532.8,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q043",
+      "query": "餐桌和椅子的照片",
+      "kind": "pair",
+      "class": "chair+diningtable",
+      "gt_in_pool": 7,
+      "gap": 0.011455,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "r2_ms": 12583.8,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q044",
+      "query": "人和汽车的照片",
+      "kind": "pair",
+      "class": "car+person",
+      "gt_in_pool": 3,
+      "gap": 0.002172,
+      "trigger": true,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.4,
+        "first_rank": 2
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "r2_ms": 19118.2,
+      "a2_ms": 19118.2,
+      "fallback": false
+    },
+    {
+      "id": "q045",
+      "query": "骑马的人的照片",
+      "kind": "pair",
+      "class": "horse+person",
+      "gt_in_pool": 9,
+      "gap": 0.004698,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "r2_ms": 13336.6,
+      "a2_ms": 13336.6,
+      "fallback": false
+    },
+    {
+      "id": "q046",
+      "query": "沙发和椅子的照片",
+      "kind": "pair",
+      "class": "chair+sofa",
+      "gt_in_pool": 4,
+      "gap": 0.020395,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.4,
+        "first_rank": 3
+      },
+      "always_r2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.6,
+        "first_rank": 2
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.4,
+        "first_rank": 3
+      },
+      "r2_ms": 13422.4,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q047",
+      "query": "椅子和电视的照片",
+      "kind": "pair",
+      "class": "chair+tvmonitor",
+      "gt_in_pool": 3,
+      "gap": 0.02282,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.2,
+        "first_rank": 3
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.2,
+        "first_rank": 3
+      },
+      "r2_ms": 15364.0,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q048",
+      "query": "人和自行车的照片",
+      "kind": "pair",
+      "class": "bicycle+person",
+      "gt_in_pool": 6,
+      "gap": 0.012497,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "r2_ms": 14107.2,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q049",
+      "query": "拿着瓶子的人的照片",
+      "kind": "pair",
+      "class": "bottle+person",
+      "gt_in_pool": 6,
+      "gap": 0.021692,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "r2_ms": 14998.2,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q050",
+      "query": "人和椅子的照片",
+      "kind": "pair",
+      "class": "chair+person",
+      "gt_in_pool": 2,
+      "gap": 0.01075,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.4,
+        "first_rank": 2
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.4,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.4,
+        "first_rank": 2
+      },
+      "r2_ms": 10472.8,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q051",
+      "query": "人和盆栽的照片",
+      "kind": "pair",
+      "class": "person+pottedplant",
+      "gt_in_pool": 2,
+      "gap": 0.009282,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.2,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.4,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.2,
+        "first_rank": 1
+      },
+      "r2_ms": 11178.8,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q052",
+      "query": "人和餐桌的照片",
+      "kind": "pair",
+      "class": "diningtable+person",
+      "gt_in_pool": 5,
+      "gap": 0.003567,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "r2_ms": 11350.1,
+      "a2_ms": 11350.1,
+      "fallback": false
+    },
+    {
+      "id": "q053",
+      "query": "公交车和人的照片",
+      "kind": "pair",
+      "class": "bus+person",
+      "gt_in_pool": 3,
+      "gap": 0.005639,
+      "trigger": true,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.4,
+        "first_rank": 2
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.4,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.4,
+        "first_rank": 1
+      },
+      "r2_ms": 14956.6,
+      "a2_ms": 14956.6,
+      "fallback": false
+    },
+    {
+      "id": "q054",
+      "query": "盆栽和椅子的照片",
+      "kind": "pair",
+      "class": "chair+pottedplant",
+      "gt_in_pool": 2,
+      "gap": 0.021858,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 0,
+        "mrr": 0.1111111111111111,
+        "p5": 0.0,
+        "first_rank": 9
+      },
+      "always_r2": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 1,
+        "mrr": 0.2,
+        "p5": 0.2,
+        "first_rank": 5
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 0,
+        "mrr": 0.1111111111111111,
+        "p5": 0.0,
+        "first_rank": 9
+      },
+      "r2_ms": 10849.9,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q055",
+      "query": "沙发和电视的照片",
+      "kind": "pair",
+      "class": "sofa+tvmonitor",
+      "gt_in_pool": 2,
+      "gap": 0.02426,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.2,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.4,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.2,
+        "first_rank": 1
+      },
+      "r2_ms": 16878.4,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q056",
+      "query": "公交车和汽车的照片",
+      "kind": "pair",
+      "class": "bus+car",
+      "gt_in_pool": 2,
+      "gap": 0.011988,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 1,
+        "mrr": 0.25,
+        "p5": 0.2,
+        "first_rank": 4
+      },
+      "always_r2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.2,
+        "first_rank": 3
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 1,
+        "mrr": 0.25,
+        "p5": 0.2,
+        "first_rank": 4
+      },
+      "r2_ms": 11240.6,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q057",
+      "query": "盆栽和沙发的照片",
+      "kind": "pair",
+      "class": "pottedplant+sofa",
+      "gt_in_pool": 6,
+      "gap": 0.024616,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "r2_ms": 14201.1,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q058",
+      "query": "船上的人的照片",
+      "kind": "pair",
+      "class": "boat+person",
+      "gt_in_pool": 3,
+      "gap": 0.004271,
+      "trigger": true,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "r2_ms": 10697.7,
+      "a2_ms": 10697.7,
+      "fallback": false
+    },
+    {
+      "id": "q059",
+      "query": "餐桌上的瓶子的照片",
+      "kind": "pair",
+      "class": "bottle+diningtable",
+      "gt_in_pool": 3,
+      "gap": 0.009316,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.2,
+        "first_rank": 2
+      },
+      "always_r2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.4,
+        "first_rank": 3
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.2,
+        "first_rank": 2
+      },
+      "r2_ms": 12253.3,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q060",
+      "query": "人和狗的照片",
+      "kind": "pair",
+      "class": "dog+person",
+      "gt_in_pool": 3,
+      "gap": 0.003074,
+      "trigger": true,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 1,
+        "mrr": 0.25,
+        "p5": 0.2,
+        "first_rank": 4
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "r2_ms": 11854.9,
+      "a2_ms": 11854.9,
+      "fallback": false
+    },
+    {
+      "id": "q061",
+      "query": "人和牛的照片",
+      "kind": "pair",
+      "class": "cow+person",
+      "gt_in_pool": 5,
+      "gap": 0.008304,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 1.0,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.6,
+        "first_rank": 1
+      },
+      "r2_ms": 11663.7,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q062",
+      "query": "火车和人的照片",
+      "kind": "pair",
+      "class": "person+train",
+      "gt_in_pool": 4,
+      "gap": 0.008131,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "r2_ms": 11769.0,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q063",
+      "query": "人和电视的照片",
+      "kind": "pair",
+      "class": "person+tvmonitor",
+      "gt_in_pool": 0,
+      "gap": 0.011752,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 0,
+        "mrr": 0.0,
+        "p5": 0.0,
+        "first_rank": null
+      },
+      "always_r2": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 0,
+        "mrr": 0.0,
+        "p5": 0.0,
+        "first_rank": null
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 0,
+        "mrr": 0.0,
+        "p5": 0.0,
+        "first_rank": null
+      },
+      "r2_ms": 13024.4,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q064",
+      "query": "沙发上的狗的照片",
+      "kind": "pair",
+      "class": "dog+sofa",
+      "gt_in_pool": 5,
+      "gap": 0.012583,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.4,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.8,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.4,
+        "first_rank": 1
+      },
+      "r2_ms": 10125.1,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q065",
+      "query": "瓶子和椅子的照片",
+      "kind": "pair",
+      "class": "bottle+chair",
+      "gt_in_pool": 1,
+      "gap": 0.012345,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.2,
+        "first_rank": 3
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.2,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.2,
+        "first_rank": 3
+      },
+      "r2_ms": 10702.1,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q066",
+      "query": "人和沙发的照片",
+      "kind": "pair",
+      "class": "person+sofa",
+      "gt_in_pool": 3,
+      "gap": 0.0129,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.4,
+        "first_rank": 2
+      },
+      "always_r2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.6,
+        "first_rank": 2
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.4,
+        "first_rank": 2
+      },
+      "r2_ms": 11994.9,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q067",
+      "query": "汽车和摩托车的照片",
+      "kind": "pair",
+      "class": "car+motorbike",
+      "gt_in_pool": 1,
+      "gap": 0.011211,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.2,
+        "first_rank": 3
+      },
+      "always_r2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.2,
+        "first_rank": 2
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.2,
+        "first_rank": 3
+      },
+      "r2_ms": 11322.6,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q068",
+      "query": "椅子和狗的照片",
+      "kind": "pair",
+      "class": "chair+dog",
+      "gt_in_pool": 2,
+      "gap": 0.007176,
+      "trigger": false,
+      "baseline": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.2,
+        "first_rank": 1
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.2,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.2,
+        "first_rank": 1
+      },
+      "r2_ms": 12139.9,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q069",
+      "query": "餐桌和沙发的照片",
+      "kind": "pair",
+      "class": "diningtable+sofa",
+      "gt_in_pool": 2,
+      "gap": 0.014659,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.2,
+        "first_rank": 2
+      },
+      "always_r2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.3333333333333333,
+        "p5": 0.4,
+        "first_rank": 3
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 0.5,
+        "p5": 0.2,
+        "first_rank": 2
+      },
+      "r2_ms": 16114.8,
+      "a2_ms": 0.0,
+      "fallback": false
+    },
+    {
+      "id": "q070",
+      "query": "自行车和电视的照片",
+      "kind": "pair",
+      "class": "bicycle+tvmonitor",
+      "gt_in_pool": 2,
+      "gap": 0.015666,
+      "trigger": false,
+      "baseline": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 1,
+        "mrr": 0.2,
+        "p5": 0.2,
+        "first_rank": 5
+      },
+      "always_r2": {
+        "hit1": 1,
+        "hit3": 1,
+        "hit5": 1,
+        "mrr": 1.0,
+        "p5": 0.4,
+        "first_rank": 1
+      },
+      "a2": {
+        "hit1": 0,
+        "hit3": 0,
+        "hit5": 1,
+        "mrr": 0.2,
+        "p5": 0.2,
+        "first_rank": 5
+      },
+      "r2_ms": 12667.7,
+      "a2_ms": 0.0,
+      "fallback": false
+    }
+  ],
+  "clip_probe": "D:\\document\\py_prj\\ImageTextSystem\\Smartlmager-sqlite-vec\\backend\\ai_func\\recommendation\\evaluation\\results\\a2_gap_400\\clip_probe.json",
+  "simple_false_trigger_rate": 0.25,
+  "tau_sweep_trigger_rate": {
+    "0.04": 1.0,
+    "0.06": 1.0,
+    "0.08": 1.0,
+    "0.1": 1.0,
+    "0.12": 1.0
+  }
+}

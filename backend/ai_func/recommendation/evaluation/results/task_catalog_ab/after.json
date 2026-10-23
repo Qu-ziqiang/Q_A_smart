@@ -1,0 +1,6064 @@
+{
+  "arm": "after",
+  "meta": {
+    "total_cases": 240,
+    "judge": {
+      "provider": "openai",
+      "model": "glm-4-air",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "temperature": 0.0
+    },
+    "elapsed_ms": 1513512.2,
+    "include_extra": true,
+    "arm": "after",
+    "catalog": "10-task"
+  },
+  "overall": {
+    "total_cases": 240,
+    "overall_score": 0.0,
+    "pass_rate": 0.0,
+    "fail_rate": 1.0,
+    "plan_ok_rate": 0.0
+  },
+  "scores": {
+    "planning_quality": 0.0,
+    "agent_routing": 0.0,
+    "tool_usage": 0.0,
+    "recovery_behavior": 0.0,
+    "final_result_quality": 0.0
+  },
+  "verdict": {
+    "pass": 0,
+    "flag": 0,
+    "fail": 240
+  },
+  "category_breakdown": {
+    "complex": {
+      "count": 20,
+      "score": 0.0
+    },
+    "multi_agent": {
+      "count": 40,
+      "score": 0.0
+    },
+    "organization": {
+      "count": 65,
+      "score": 0.0
+    },
+    "recovery": {
+      "count": 30,
+      "score": 0.0
+    },
+    "retrieval": {
+      "count": 40,
+      "score": 0.0
+    },
+    "vision": {
+      "count": 45,
+      "score": 0.0
+    }
+  },
+  "task_type_counts": {},
+  "records": [
+    {
+      "case_id": "bench_1_agent_benchmark_001",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找清晰通透的海边日落图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未调用任何agents和tools，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_002",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找高级灰调的海边日落图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_003",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找自然光影的海边日落图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "未调用任何agent和工具"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_004",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找广角纵深的海边日落图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_005",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找清晰通透的高山湖泊图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_006",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找高级灰调的高山湖泊图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_007",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找自然光影的高山湖泊图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具使用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_008",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找广角纵深的高山湖泊图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_009",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找清晰通透的现代建筑图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成或无效",
+        "execution中executed、succeeded、failed均为0，表明未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_010",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找高级灰调的现代建筑图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "agents和tools均未调用，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_011",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找自然光影的现代建筑图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未执行任何任务，agent和tool调用均为0",
+        "最终状态为abort，未达成任何目标"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_012",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找广角纵深的现代建筑图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未调用任何agent和工具，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_013",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找清晰通透的工业厂房图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未调用任何agent和工具，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_014",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找高级灰调的工业厂房图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_015",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找自然光影的工业厂房图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未调用任何agent和工具，执行完全失败",
+        "最终状态为abort，未达成任何目标"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_016",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找广角纵深的工业厂房图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_017",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找清晰通透的古镇街道图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "agents和tools均为空，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_018",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找高级灰调的古镇街道图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_019",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找自然光影的古镇街道图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未调用任何agent和工具，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_020",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找广角纵深的古镇街道图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "agents和tools均未调用，执行完全失败",
+        "final_state为abort，判定为致命错误"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_021",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找清晰通透的霓虹夜景图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未执行任何任务，agent和tool调用均为0",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_022",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找高级灰调的霓虹夜景图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_023",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找自然光影的霓虹夜景图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "工具调用次数为0，未执行任何检索操作"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_024",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找广角纵深的霓虹夜景图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_025",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找清晰通透的极简室内图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_026",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找高级灰调的极简室内图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_027",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找自然光影的极简室内图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未调用任何agent和tool，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_028",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找广角纵深的极简室内图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_029",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找清晰通透的美食特写图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未调用任何agent和工具，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_030",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找高级灰调的美食特写图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，计划未生成",
+        "未调用任何agents和tools，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_031",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找自然光影的美食特写图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_032",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找广角纵深的美食特写图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed、succeeded、failed均为0，表明无实际执行",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_033",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找清晰通透的森林晨雾图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_034",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找高级灰调的森林晨雾图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_035",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找自然光影的森林晨雾图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_036",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找广角纵深的森林晨雾图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_037",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找清晰通透的城市车流图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "agents和tools未调用，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_038",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找高级灰调的城市车流图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成或无效",
+        "execution中executed、succeeded、failed均为0，表明未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_039",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找自然光影的城市车流图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未调用任何agents和tools，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_040",
+      "arm": "after",
+      "category": "retrieval",
+      "query": "找广角纵深的城市车流图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_001",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "final_state 为 abort，执行被终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_002",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "final_state 为 abort，执行被终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_003",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_004",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_005",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_006",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "工具调用次数为0，未执行任何检索任务"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_007",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_008",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_009",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false 且 tasks 为空，计划未生成",
+        "execution 中 executed/succeeded/failed 均为 0，未执行任何任务",
+        "final_state 为 abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_010",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false 且 tasks 为空，计划未生成或无效",
+        "execution 中 executed/succeeded/failed 均为 0，未执行任何任务",
+        "final_state 为 abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_011",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具调用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_012",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_013",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "final_state 为 abort，执行被终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_014",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_015",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，无任务执行",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_016",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_017",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_018",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false 且 tasks 为空，计划未生成",
+        "execution 中 executed/skipped/failed 均为 0，未执行任何任务",
+        "final_state 为 abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_019",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_020",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_021",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "final_state 为 abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_022",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "final_state 为 abort，执行被终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_023",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "工具调用次数为0，未执行任何检索或整理操作"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_024",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，未使用任何工具"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_025",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_026",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "final_state 为 abort，执行被终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_027",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "未调用任何agents和tools，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_028",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_029",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_030",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "执行状态为abort，系统终止执行",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_031",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_032",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_033",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "final_state 为 abort，执行被终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_034",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false，计划未通过验证",
+        "final_state 为 abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_035",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_036",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "工具调用次数为0，未执行任何操作"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_037",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后按地点分组整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，未使用任何工具"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_038",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后按拍摄地点分类输出",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，未使用任何工具"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_039",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后整理成地点相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_040",
+      "arm": "after",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_001",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索海边日落图片并分析画面主体内容",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "agents和tools均为空，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_002",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索海边日落图片并识别画面中的主要属性与元素",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未开始",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_003",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索海边日落图片并判断图片的风格倾向",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "未调用任何agent和工具，执行完全失败",
+        "final_state为abort，判定为致命错误"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_004",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索海边日落图片并核验图片是否符合任务描述",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "未调用任何agents和tools，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_005",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索海边日落图片并判断适合作为壁纸还是海报素材",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_006",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索高山湖泊图片并分析画面主体内容",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_007",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索高山湖泊图片并识别画面中的主要属性与元素",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且plan_ok为false，执行未开始",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_008",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索高山湖泊图片并判断图片的风格倾向",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_009",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索高山湖泊图片并核验图片是否符合任务描述",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_010",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索高山湖泊图片并判断适合作为壁纸还是海报素材",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且plan_ok为false，执行未开始",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_011",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索现代建筑图片并分析画面主体内容",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_012",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索现代建筑图片并识别画面中的主要属性与元素",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_013",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索现代建筑图片并判断图片的风格倾向",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_014",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索现代建筑图片并核验图片是否符合任务描述",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_015",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索现代建筑图片并判断适合作为壁纸还是海报素材",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，无任务执行",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_016",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索工业厂房图片并分析画面主体内容",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_017",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索工业厂房图片并识别画面中的主要属性与元素",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_018",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索工业厂房图片并判断图片的风格倾向",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "未执行任何任务（executed=0）",
+        "最终状态为abort，执行失败"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_019",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索工业厂房图片并核验图片是否符合任务描述",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_020",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索工业厂房图片并判断适合作为壁纸还是海报素材",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_021",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索古镇街道图片并分析画面主体内容",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_022",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索古镇街道图片并识别画面中的主要属性与元素",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_023",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索古镇街道图片并判断图片的风格倾向",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_024",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索古镇街道图片并核验图片是否符合任务描述",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_025",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索古镇街道图片并判断适合作为壁纸还是海报素材",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_026",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并分析画面主体内容",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0且final_state为abort，执行完全失败",
+        "未调用任何agents和tools，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_027",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并识别画面中的主要属性与元素",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan为空且plan_ok为false，计划完全未生成",
+        "未调用任何agents和tools，执行完全失败",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_028",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并判断图片的风格倾向",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_029",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并核验图片是否符合任务描述",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_030",
+      "arm": "after",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并判断适合作为壁纸还是海报素材",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_001",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_002",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，系统终止",
+        "无任何工具调用或任务执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_003",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "selection_count为0，未产生任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_004",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "执行状态为abort，系统终止执行",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_005",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_006",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_007",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_008",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "selection_count为0，未产出任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_009",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，无实际操作"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_010",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_011",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_012",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "执行状态为abort，系统主动终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_013",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "selection_count为0，未产生任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_014",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且final_state为abort，表明计划失败或执行被中止",
+        "无任何任务被执行（executed: 0），未达成任何目标",
+        "无工具调用（total: 0），无法完成检索、分类等核心任务"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_015",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "执行状态为abort，任务被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_016",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "selection_count为0，未产出任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_017",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_018",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且final_state为abort，表明计划失败或执行被中止，属于致命错误",
+        "未执行任何任务（executed: 0），未使用任何工具（total: 0），未生成任何结果（selection_count: 0）",
+        "recovery_behavior显示无错误处理（had_error: false），但执行已终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_019",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_020",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_021",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_022",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_023",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_024",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "selection_count为0，未产出任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_025",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未完成任何任务",
+        "工具调用次数为0，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_026",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "执行被终止（final_state: 'abort'），未完成任何任务",
+        "计划未通过验证（plan_ok: false）",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_027",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "执行状态为abort，任务被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_028",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_029",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，无实际执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_030",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且final_state为abort，表明计划失败或执行被中止",
+        "未执行任何任务（executed: 0），未成功任何任务（succeeded: 0）",
+        "工具调用次数为0（total: 0），无法评估工具使用质量"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_031",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_032",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且final_state为abort，表明计划失败或执行被中止，属于致命错误",
+        "tasks、agents、tools字段均为空，表明未生成任何计划或执行任何操作",
+        "selection_count为0且无任何输出，未达成任何目标"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_033",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，无实际操作"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_034",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_035",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "selection_count为0，未产出任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_036",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "selection_count为0，未产出任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_037",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_038",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "执行因 abort 终止，未完成任何任务",
+        "plan_ok 为 false，计划未通过验证",
+        "工具调用次数为 0，未执行任何操作"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_039",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "执行状态为abort，任务被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_040",
+      "arm": "after",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "selection_count为0，未产出任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_001",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索私人渔场的清晨码头的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_002",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索废弃矿山的运输轨道的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_003",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索十九世纪欧洲蒸汽车站的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_004",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索深海热泉口的生物的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_005",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索极地苔原夏季花海的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_006",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索古法手工纸作坊的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，未使用任何工具"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_007",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索楼顶农场大棚的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_008",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索古董胶片相机内部的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_009",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索城市轻轨高架下的市集的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_010",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索溶洞暗河倒影的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_011",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索无人区盐湖星空的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_012",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索老厂区改造的咖啡馆的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_013",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索热带雨林树冠层的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_014",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索冰洞蓝光纹理的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_015",
+      "arm": "after",
+      "category": "recovery",
+      "query": "搜索手工皮具工坊的图片",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成任何有效任务",
+        "execution中executed、succeeded、failed均为0，表明未执行任何操作",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_016",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟搜索服务故障获取图片（场景16）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "未执行任何任务（executed: 0），工具调用次数为0",
+        "最终状态为abort，执行失败"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_017",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟检索工具连续不可用（场景17）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_018",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟 MCP 检索服务中断（场景18）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_019",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟远端图片搜索超时（场景19）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_020",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟数据库检索异常重试失败（场景20）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "未执行任何任务（executed: 0）",
+        "最终状态为abort，执行失败"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_021",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟搜索服务故障获取图片（场景21）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_022",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟检索工具连续不可用（场景22）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_023",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟 MCP 检索服务中断（场景23）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_024",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟远端图片搜索超时（场景24）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_025",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟数据库检索异常重试失败（场景25）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_026",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟搜索服务故障获取图片（场景26）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_027",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟检索工具连续不可用（场景27）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_028",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟 MCP 检索服务中断（场景28）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_029",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟远端图片搜索超时（场景29）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_030",
+      "arm": "after",
+      "category": "recovery",
+      "query": "模拟数据库检索异常重试失败（场景30）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_001",
+      "arm": "after",
+      "category": "complex",
+      "query": "帮我找适合旅游宣传册的图片，并分析哪些最适合",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，表明规划阶段失败",
+        "final_state为abort，执行被终止",
+        "未执行任何任务（executed: 0），未使用任何工具（total: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_002",
+      "arm": "after",
+      "category": "complex",
+      "query": "帮我找适合旅游宣传册的图片，并分析哪些最适合（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且plan_ok为false，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_003",
+      "arm": "after",
+      "category": "complex",
+      "query": "找一套北欧风装修参考图，按房间分类并说明哪些适合墙面装饰",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_004",
+      "arm": "after",
+      "category": "complex",
+      "query": "找一套北欧风装修参考图，按房间分类并说明哪些适合墙面装饰（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未生成或无效",
+        "final_state为abort，执行被终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_005",
+      "arm": "after",
+      "category": "complex",
+      "query": "我需要中学自然课课件的配图：风景要有层次，适合讲解地形",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_006",
+      "arm": "after",
+      "category": "complex",
+      "query": "我需要中学自然课课件的配图：风景要有层次，适合讲解地形（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_007",
+      "arm": "after",
+      "category": "complex",
+      "query": "收集适合放在年度总结 PPT 里的城市发展对比图",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，无实际执行",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_008",
+      "arm": "after",
+      "category": "complex",
+      "query": "收集适合放在年度总结 PPT 里的城市发展对比图（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_009",
+      "arm": "after",
+      "category": "complex",
+      "query": "找适合电商详情页首屏的高清产品氛围图并说明推荐理由",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_010",
+      "arm": "after",
+      "category": "complex",
+      "query": "找适合电商详情页首屏的高清产品氛围图并说明推荐理由（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_011",
+      "arm": "after",
+      "category": "complex",
+      "query": "找婚礼跟拍风格的样片作为参考，标注哪几张最接近纪实风",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_012",
+      "arm": "after",
+      "category": "complex",
+      "query": "找婚礼跟拍风格的样片作为参考，标注哪几张最接近纪实风（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_013",
+      "arm": "after",
+      "category": "complex",
+      "query": "为健身工作室找硬朗风格的环境背景图并核验内容",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_014",
+      "arm": "after",
+      "category": "complex",
+      "query": "为健身工作室找硬朗风格的环境背景图并核验内容（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "agents和tools为空，未调用任何Agent或工具",
+        "execution中executed、succeeded、failed均为0，未执行任何任务"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_015",
+      "arm": "after",
+      "category": "complex",
+      "query": "找儿童绘本风格的插画用于故事创作参考",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_016",
+      "arm": "after",
+      "category": "complex",
+      "query": "找儿童绘本风格的插画用于故事创作参考（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_017",
+      "arm": "after",
+      "category": "complex",
+      "query": "为博物馆临时展寻找墙面大幅摄影并给出布展建议",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_018",
+      "arm": "after",
+      "category": "complex",
+      "query": "为博物馆临时展寻找墙面大幅摄影并给出布展建议（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_019",
+      "arm": "after",
+      "category": "complex",
+      "query": "找能当旅行杂志封面的候选图片，分析哪张最有冲击力",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_020",
+      "arm": "after",
+      "category": "complex",
+      "query": "找能当旅行杂志封面的候选图片，分析哪张最有冲击力（结合季节光线偏好）",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_001",
+      "arm": "after",
+      "category": "organization",
+      "query": "找旅行照片，按地点分组后再每组选2张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "最终选择数量为0，未达成用户目标"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_002",
+      "arm": "after",
+      "category": "organization",
+      "query": "找城市夜景，按拍摄时间从新到旧排序",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，无任务执行",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_003",
+      "arm": "after",
+      "category": "organization",
+      "query": "找建筑照片并去掉重复的同一张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok 为 false 且 tasks 为空，计划未生成",
+        "execution 中 executed/skipped/failed 均为 0，未执行任何任务",
+        "final_state 为 abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_004",
+      "arm": "after",
+      "category": "organization",
+      "query": "找风景图，只要横向 jpg，再按宽度从大到小排",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具调用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_005",
+      "arm": "after",
+      "category": "organization",
+      "query": "找动物照片，选出评分最高的5张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_006",
+      "arm": "after",
+      "category": "organization",
+      "query": "先找海边照片，再按候选和查询的相关度重排",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，未使用任何工具"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_007",
+      "arm": "after",
+      "category": "organization",
+      "query": "找2025年旅行照，按地点分组后每组留1张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_008",
+      "arm": "after",
+      "category": "organization",
+      "query": "找已有标签包含旅行的照片并按年份整理",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，未使用任何工具"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_009",
+      "arm": "after",
+      "category": "organization",
+      "query": "找宽度至少1920的图片，再按标题字母序排列",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具使用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_010",
+      "arm": "after",
+      "category": "organization",
+      "query": "找室内照片，去掉重复后再选3张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具使用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_011",
+      "arm": "after",
+      "category": "vision",
+      "query": "找花卉照片并确认画面里确实有红色花朵",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_012",
+      "arm": "after",
+      "category": "vision",
+      "query": "找派对候选，再判断画面中是否看得见生日蛋糕",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具使用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_013",
+      "arm": "after",
+      "category": "vision",
+      "query": "找人像再确认哪些人物眼睛清晰可见",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_014",
+      "arm": "after",
+      "category": "vision",
+      "query": "找横向JPG，再确认画面里有海滩",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，系统终止",
+        "无任何工具调用或agent执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_015",
+      "arm": "after",
+      "category": "vision",
+      "query": "找商品图，比较包装主色是不是蓝色",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_016",
+      "arm": "after",
+      "category": "vision",
+      "query": "找建筑照片，再比较哪几张构图更对称",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_017",
+      "arm": "after",
+      "category": "vision",
+      "query": "找旅行照并确认画面里同时有山和湖",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_018",
+      "arm": "after",
+      "category": "vision",
+      "query": "找2025年照片，再确认画面中有人骑马",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_019",
+      "arm": "after",
+      "category": "organization",
+      "query": "找夜景，只要最相关的前8张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具调用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_020",
+      "arm": "after",
+      "category": "organization",
+      "query": "找猫的照片，按文件类型分类",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具使用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_021",
+      "arm": "after",
+      "category": "organization",
+      "query": "找风景照，先过滤竖图再按时间排序",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，系统终止",
+        "无任何工具调用或agent执行"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_022",
+      "arm": "after",
+      "category": "organization",
+      "query": "找街道照片去重，再按地点分组",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具使用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_023",
+      "arm": "after",
+      "category": "organization",
+      "query": "找美食图，按相关度重排后选前4张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0且succeeded为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_024",
+      "arm": "after",
+      "category": "organization",
+      "query": "找已有旅行标签的横向照片并整理到各地分组",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态为abort，未执行任何任务",
+        "工具调用次数为0，未使用任何工具"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_025",
+      "arm": "after",
+      "category": "organization",
+      "query": "找湖景，按高度从高到低排序后选3张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具调用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_026",
+      "arm": "after",
+      "category": "vision",
+      "query": "找婚礼照片并核验画面是否有蛋糕",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_027",
+      "arm": "after",
+      "category": "vision",
+      "query": "找儿童室内照，再识别画面中是否真的有儿童",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "execution中executed为0且无任何任务执行",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_028",
+      "arm": "after",
+      "category": "vision",
+      "query": "找阴天风景，再判断天空是否阴沉",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0且plan_ok为false，执行未启动",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_029",
+      "arm": "after",
+      "category": "vision",
+      "query": "找宽图并判断构图是否适合做横幅",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具使用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_030",
+      "arm": "after",
+      "category": "vision",
+      "query": "找自行车照片，确认能不能看见红色自行车",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成或无效",
+        "execution中executed为0，未执行任何任务",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_031",
+      "arm": "after",
+      "category": "organization",
+      "query": "找雪景，按地点分组后每组推荐1张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "selection_count为0，未产生任何结果"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_032",
+      "arm": "after",
+      "category": "organization",
+      "query": "找博物馆展品图，去掉重复id再按时间排",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具使用和agent路由无法评估"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_033",
+      "arm": "after",
+      "category": "organization",
+      "query": "找咖啡馆照片，只要jpg并且按相关度重排",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且tasks为空，计划未生成",
+        "execution中executed为0且plan_ok为false，执行未开始",
+        "final_state为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_034",
+      "arm": "after",
+      "category": "organization",
+      "query": "找日落，选出最相关的6张不要分组",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan为空且plan_ok为false，计划完全未生成",
+        "未执行任何任务，工具调用次数为0",
+        "最终状态为abort，未达成任何目标"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_035",
+      "arm": "after",
+      "category": "organization",
+      "query": "找山脉照片并按年份整理，再每组留2张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "执行状态显示所有任务未执行（executed: 0）",
+        "最终状态为abort，未达成任何目标"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_036",
+      "arm": "after",
+      "category": "organization",
+      "query": "找古镇街道，过滤已有标签后再按地点归档",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，任务列表为空，计划未生成",
+        "execution中executed、succeeded、failed均为0，未执行任何任务",
+        "final_state为abort，执行被中止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_037",
+      "arm": "after",
+      "category": "vision",
+      "query": "找桌面静物，确认画面里有没有咖啡杯",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan为空且plan_ok为false，计划未生成或失败",
+        "未执行任何任务，agent和tool调用均为0",
+        "最终状态为abort，执行被终止"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_038",
+      "arm": "after",
+      "category": "organization",
+      "query": "找夜市照片，重排后去掉重复再选5张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false且任务列表为空，计划未生成",
+        "final_state为abort，执行被终止",
+        "未执行任何任务，工具使用次数为0"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_039",
+      "arm": "after",
+      "category": "vision",
+      "query": "找海边人物照，先按时间排序再确认哪些能看见人脸",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被中止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    },
+    {
+      "case_id": "ab_extra_040",
+      "arm": "after",
+      "category": "organization",
+      "query": "找火车照片，按文件类型分类并每类选1张",
+      "score": 0.0,
+      "dimension_scores": {
+        "planning_quality": 0.0,
+        "agent_routing": 0.0,
+        "tool_usage": 0.0,
+        "recovery_behavior": 0.0,
+        "final_result_quality": 0.0
+      },
+      "verdict": "fail",
+      "judge_reason": [
+        "plan_ok为false，计划未通过验证",
+        "final_state为abort，执行被终止",
+        "未执行任何任务（executed: 0）"
+      ],
+      "judge_error": null,
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "selection_count": 0
+    }
+  ]
+}

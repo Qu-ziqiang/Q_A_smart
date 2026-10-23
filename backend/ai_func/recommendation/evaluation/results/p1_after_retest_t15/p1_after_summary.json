@@ -1,0 +1,69 @@
+{
+  "arm": "after",
+  "lint": false,
+  "elapsed_s": 587.1,
+  "baseline": {
+    "simple_avg_tasks": 4.85,
+    "simple_pure_retrieve_rate": 0.085,
+    "plan_ok_rate": 0.9833,
+    "optional_full": {
+      "deduplicate_images": 187,
+      "select_images": 132,
+      "rerank_candidates": 68,
+      "verify_visual_condition": 20
+    },
+    "source": "evaluation/results/task_catalog_ab_deepseek/p1_plan_bloat.json"
+  },
+  "all": {
+    "n": 240,
+    "avg_tasks": 3.321,
+    "pure_retrieve_rate": 0.2458,
+    "optional_counts": {
+      "verify_visual_condition": 20,
+      "select_images": 18,
+      "deduplicate_images": 18,
+      "sort_images": 7,
+      "rerank_candidates": 4
+    },
+    "plan_ok_rate": 1.0
+  },
+  "simple_subset": {
+    "n": 153,
+    "avg_tasks": 3.261,
+    "pure_retrieve_rate": 0.3725,
+    "optional_counts": {
+      "verify_visual_condition": 9,
+      "select_images": 10,
+      "deduplicate_images": 16,
+      "sort_images": 1,
+      "rerank_candidates": 1
+    },
+    "plan_ok_rate": 1.0
+  },
+  "delta": {
+    "simple_avg_tasks": -1.589,
+    "simple_pure_retrieve_rate": 0.2875,
+    "plan_ok_rate": 0.0167
+  },
+  "plan_lint_stripped": 0,
+  "plan_floor_retry": 16,
+  "plan_floor_fallback": 2,
+  "stage_latency": {
+    "planner": {
+      "n": 279,
+      "mean_ms": 1917.178,
+      "p50_ms": 1897.153,
+      "p95_ms": 2819.923,
+      "p99_ms": 3255.512,
+      "max_ms": 3654.279
+    }
+  },
+  "pass": true,
+  "note": "通过：简单均 Task 显著下降 + plan_ok 不降。单独 4.85 不进简历；只写 4.85→X。",
+  "paths": {
+    "records": "D:\\document\\py_prj\\ImageTextSystem\\Smartlmager-sqlite-vec\\backend\\ai_func\\recommendation\\evaluation\\results\\p1_after_retest_t15\\after_retest.json",
+    "summary": "D:\\document\\py_prj\\ImageTextSystem\\Smartlmager-sqlite-vec\\backend\\ai_func\\recommendation\\evaluation\\results\\p1_after_retest_t15\\p1_after_summary.json",
+    "baseline": "evaluation/results/task_catalog_ab_deepseek/p1_plan_bloat.json"
+  },
+  "still_bloated": false
+}

@@ -1,0 +1,271 @@
+{
+  "before_rows": [
+    {
+      "label": "success",
+      "decisions": [
+        "continue"
+      ],
+      "final": "done",
+      "planner_calls": 1,
+      "search_calls": 1,
+      "plan_events": 1,
+      "observe_events": 1,
+      "plan_failed": false,
+      "trigger": "NONE",
+      "action": "",
+      "query_changed": false,
+      "queries": [
+        "城市建筑"
+      ],
+      "selection": [
+        201,
+        202
+      ],
+      "latency_ms": 3.5,
+      "replan_reason": ""
+    },
+    {
+      "label": "empty_then_hit",
+      "decisions": [
+        "revise",
+        "continue"
+      ],
+      "final": "done",
+      "planner_calls": 1,
+      "search_calls": 2,
+      "plan_events": 2,
+      "observe_events": 2,
+      "plan_failed": false,
+      "trigger": "NONE",
+      "action": "",
+      "query_changed": false,
+      "queries": [
+        "城市建筑",
+        "城市建筑"
+      ],
+      "selection": [
+        201,
+        202
+      ],
+      "latency_ms": 0.67,
+      "replan_reason": ""
+    },
+    {
+      "label": "low_relevance_then_hit",
+      "decisions": [
+        "continue"
+      ],
+      "final": "done",
+      "planner_calls": 1,
+      "search_calls": 1,
+      "plan_events": 1,
+      "observe_events": 1,
+      "plan_failed": false,
+      "trigger": "NONE",
+      "action": "",
+      "query_changed": false,
+      "queries": [
+        "城市建筑"
+      ],
+      "selection": [
+        301
+      ],
+      "latency_ms": 0.35,
+      "replan_reason": ""
+    },
+    {
+      "label": "exec_fail",
+      "decisions": [
+        "revise",
+        "abort"
+      ],
+      "final": "abort",
+      "planner_calls": 1,
+      "search_calls": 2,
+      "plan_events": 2,
+      "observe_events": 2,
+      "plan_failed": false,
+      "trigger": "NONE",
+      "action": "",
+      "query_changed": false,
+      "queries": [
+        "城市建筑",
+        "城市建筑"
+      ],
+      "selection": [],
+      "latency_ms": 0.44,
+      "replan_reason": ""
+    },
+    {
+      "label": "empty_then_empty",
+      "decisions": [
+        "revise",
+        "abort"
+      ],
+      "final": "abort",
+      "planner_calls": 1,
+      "search_calls": 2,
+      "plan_events": 2,
+      "observe_events": 2,
+      "plan_failed": false,
+      "trigger": "NONE",
+      "action": "",
+      "query_changed": false,
+      "queries": [
+        "城市建筑",
+        "城市建筑"
+      ],
+      "selection": [],
+      "latency_ms": 0.52,
+      "replan_reason": ""
+    }
+  ],
+  "after_rows": [
+    {
+      "label": "success",
+      "decisions": [
+        "continue"
+      ],
+      "final": "done",
+      "planner_calls": 1,
+      "search_calls": 1,
+      "plan_events": 1,
+      "observe_events": 1,
+      "plan_failed": false,
+      "trigger": "NONE",
+      "action": "",
+      "query_changed": false,
+      "queries": [
+        "城市建筑"
+      ],
+      "selection": [
+        201,
+        202
+      ],
+      "latency_ms": 0.55,
+      "replan_reason": ""
+    },
+    {
+      "label": "empty_then_hit",
+      "decisions": [
+        "replan",
+        "continue"
+      ],
+      "final": "done",
+      "planner_calls": 2,
+      "search_calls": 2,
+      "plan_events": 2,
+      "observe_events": 2,
+      "plan_failed": false,
+      "trigger": "EMPTY_RETRIEVAL",
+      "action": "RETRY_REWRITE",
+      "query_changed": true,
+      "queries": [
+        "城市建筑",
+        "城市建筑 改写"
+      ],
+      "selection": [
+        201,
+        202
+      ],
+      "latency_ms": 0.85,
+      "replan_reason": "EMPTY_RETRIEVAL"
+    },
+    {
+      "label": "low_relevance_then_hit",
+      "decisions": [
+        "replan",
+        "continue"
+      ],
+      "final": "done",
+      "planner_calls": 2,
+      "search_calls": 2,
+      "plan_events": 2,
+      "observe_events": 2,
+      "plan_failed": false,
+      "trigger": "LOW_RELEVANCE",
+      "action": "RETRY_REWRITE",
+      "query_changed": true,
+      "queries": [
+        "城市建筑",
+        "城市建筑 改写"
+      ],
+      "selection": [
+        201,
+        202
+      ],
+      "latency_ms": 0.84,
+      "replan_reason": "LOW_RELEVANCE"
+    },
+    {
+      "label": "exec_fail",
+      "decisions": [
+        "revise",
+        "abort"
+      ],
+      "final": "abort",
+      "planner_calls": 1,
+      "search_calls": 2,
+      "plan_events": 2,
+      "observe_events": 2,
+      "plan_failed": false,
+      "trigger": "EXECUTION_FAILURE",
+      "action": "RETRY_SAME",
+      "query_changed": false,
+      "queries": [
+        "城市建筑",
+        "城市建筑"
+      ],
+      "selection": [],
+      "latency_ms": 0.61,
+      "replan_reason": "EXECUTION_FAILURE"
+    },
+    {
+      "label": "empty_then_empty",
+      "decisions": [
+        "replan",
+        "abort"
+      ],
+      "final": "abort",
+      "planner_calls": 2,
+      "search_calls": 2,
+      "plan_events": 2,
+      "observe_events": 2,
+      "plan_failed": false,
+      "trigger": "EMPTY_RETRIEVAL",
+      "action": "RETRY_REWRITE",
+      "query_changed": true,
+      "queries": [
+        "城市建筑",
+        "城市建筑 改写"
+      ],
+      "selection": [],
+      "latency_ms": 0.74,
+      "replan_reason": "EMPTY_RETRIEVAL"
+    }
+  ],
+  "metrics": {
+    "before": {
+      "n": 5,
+      "recovery_trigger_rate": 0.6,
+      "second_plan_rate": 0.0,
+      "action_change_rate": 0.0,
+      "successful_recovery_rate": 0.2,
+      "abort_rate": 0.4,
+      "planner_calls_per_request": 1.0,
+      "latency_ms_mean": 1.1,
+      "invalid_replan_rate": 0.0
+    },
+    "after": {
+      "n": 5,
+      "recovery_trigger_rate": 0.8,
+      "second_plan_rate": 0.6,
+      "action_change_rate": 0.6,
+      "successful_recovery_rate": 0.4,
+      "abort_rate": 0.4,
+      "planner_calls_per_request": 1.6,
+      "latency_ms_mean": 0.72,
+      "invalid_replan_rate": 0.0
+    }
+  }
+}

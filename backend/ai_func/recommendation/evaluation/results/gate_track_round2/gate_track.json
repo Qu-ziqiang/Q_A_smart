@@ -1,0 +1,81 @@
+{
+  "gold_28": {
+    "n": 28,
+    "fn": 0,
+    "fp": 0,
+    "fn_rate": 0.0,
+    "fp_rate": 0.0,
+    "team_rate": 0.7143,
+    "legacy_rate": 0.2857,
+    "planner_calls_saved_vs_all_team": 20,
+    "legacy_skip_planner": 8,
+    "latency": {
+      "n": 28,
+      "mean_ms": 0.029,
+      "p50_ms": 0.011,
+      "p95_ms": 0.02,
+      "p99_ms": 0.359,
+      "max_ms": 0.484
+    }
+  },
+  "contrast_dev": {
+    "n": 88,
+    "fn": 0,
+    "fp": 0,
+    "fn_rate": 0.0,
+    "fp_rate": 0.0,
+    "team_rate": 0.0,
+    "legacy_rate": 1.0,
+    "planner_calls_saved_vs_all_team": 0,
+    "legacy_skip_planner": 88,
+    "latency": {
+      "n": 88,
+      "mean_ms": 0.008,
+      "p50_ms": 0.008,
+      "p95_ms": 0.01,
+      "p99_ms": 0.011,
+      "max_ms": 0.011
+    }
+  },
+  "contrast_test": {
+    "n": 32,
+    "fn": 0,
+    "fp": 0,
+    "fn_rate": 0.0,
+    "fp_rate": 0.0,
+    "team_rate": 0.0,
+    "legacy_rate": 1.0,
+    "planner_calls_saved_vs_all_team": 0,
+    "legacy_skip_planner": 32,
+    "latency": {
+      "n": 32,
+      "mean_ms": 0.01,
+      "p50_ms": 0.008,
+      "p95_ms": 0.01,
+      "p99_ms": 0.057,
+      "max_ms": 0.078
+    }
+  },
+  "all": {
+    "n": 148,
+    "fn": 0,
+    "fp": 0,
+    "fn_rate": 0.0,
+    "fp_rate": 0.0,
+    "team_rate": 0.1351,
+    "legacy_rate": 0.8649,
+    "planner_calls_saved_vs_all_team": 20,
+    "legacy_skip_planner": 128,
+    "latency": {
+      "n": 148,
+      "mean_ms": 0.008,
+      "p50_ms": 0.008,
+      "p95_ms": 0.011,
+      "p99_ms": 0.013,
+      "max_ms": 0.021
+    }
+  },
+  "gold_fn_ids": [],
+  "contrast_test_fp_ids": [],
+  "note": "产品指标：FN/FP、TEAM 率、Legacy 跳过 Planner 条数、Gate 延迟。不进 Judge。调正则只许看 contrast_dev。"
+}

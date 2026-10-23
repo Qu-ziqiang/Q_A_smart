@@ -1,0 +1,45 @@
+{
+  "overall_score": {
+    "before": 3.867,
+    "after": 4.6,
+    "delta": 0.733
+  },
+  "pass_rate": {
+    "before": 0.6667,
+    "after": 1.0,
+    "delta": 0.3333
+  },
+  "plan_ok_rate": {
+    "before": 1.0,
+    "after": 1.0,
+    "delta": 0.0
+  },
+  "scores": {
+    "planning_quality": {
+      "before": 3.667,
+      "after": 5.0,
+      "delta": 1.333
+    },
+    "agent_routing": {
+      "before": 2.667,
+      "after": 4.0,
+      "delta": 1.333
+    },
+    "tool_usage": {
+      "before": 4.667,
+      "after": 5.0,
+      "delta": 0.333
+    },
+    "recovery_behavior": {
+      "before": 4.667,
+      "after": 5.0,
+      "delta": 0.333
+    },
+    "final_result_quality": {
+      "before": 3.667,
+      "after": 4.0,
+      "delta": 0.333
+    }
+  },
+  "note": "After = 10 TaskTypes（含 rerank/dedup/sort/select/verify）；Before = 5 TaskTypes（retrieve/filter/group/analyze_visual/synthesize）。同一 Judge、同一 Fake 工具、真实 Planner。"
+}

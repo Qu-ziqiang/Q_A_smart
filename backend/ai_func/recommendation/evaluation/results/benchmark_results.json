@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "dataset": "smartimager_agent_benchmark_200.json",
+    "total_cases": 200,
+    "judge": {
+      "provider": "openai",
+      "model": "deepseek-chat",
+      "base_url": "https://api.deepseek.com",
+      "temperature": 0.0
+    }
+  },
+  "overall": {
+    "total_cases": 200,
+    "success_cases": 76,
+    "failed_cases": 0,
+    "pass_rate": 0.38,
+    "fail_rate": 0.0,
+    "overall_score": 4.228
+  },
+  "scores": {
+    "planning_quality": 4.38,
+    "agent_routing": 3.83,
+    "tool_usage": 4.655,
+    "recovery_behavior": 4.68,
+    "final_result_quality": 3.595
+  },
+  "category_breakdown": {
+    "complex": {
+      "count": 20,
+      "score": 4.63
+    },
+    "multi_agent": {
+      "count": 40,
+      "score": 4.355
+    },
+    "organization": {
+      "count": 40,
+      "score": 3.62
+    },
+    "recovery": {
+      "count": 30,
+      "score": 4.113
+    },
+    "retrieval": {
+      "count": 40,
+      "score": 4.02
+    },
+    "vision": {
+      "count": 30,
+      "score": 4.993
+    }
+  },
+  "verdict": {
+    "pass": 76,
+    "flag": 124,
+    "fail": 0
+  },
+  "deterministic": {
+    "total": 200,
+    "passed": 200,
+    "failed": 0
+  },
+  "elapsed_ms": 433709.2
+}

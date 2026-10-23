@@ -1,0 +1,34 @@
+{
+  "source": "D:\\document\\py_prj\\ImageTextSystem\\Smartlmager-sqlite-vec\\backend\\ai_func\\recommendation\\evaluation\\results\\p1_after_retest_floor\\after_retest.json",
+  "all": {
+    "n": 240,
+    "avg_tasks": 3.25,
+    "pure_retrieve_rate": 0.2375,
+    "optional_counts": {
+      "verify_visual_condition": 18,
+      "select_images": 17,
+      "deduplicate_images": 19,
+      "sort_images": 6,
+      "rerank_candidates": 4
+    }
+  },
+  "simple_subset": {
+    "n": 153,
+    "avg_tasks": 3.209,
+    "pure_retrieve_rate": 0.3725,
+    "optional_counts": {
+      "verify_visual_condition": 8,
+      "select_images": 7,
+      "deduplicate_images": 17,
+      "sort_images": 1,
+      "rerank_candidates": 1
+    }
+  },
+  "note": "基线来自 DeepSeek After 臂。Prompt 收紧后应再跑 After-only 对比本文件。",
+  "retest_summary": {
+    "simple_avg_tasks": 3.209,
+    "vs_baseline": "4.85→3.209",
+    "plan_ok": 0.975,
+    "lint": false
+  }
+}

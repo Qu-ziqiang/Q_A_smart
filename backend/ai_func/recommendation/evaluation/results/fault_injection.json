@@ -1,0 +1,38 @@
+{
+  "n": 6,
+  "success_count": 6,
+  "success_rate": 1.0,
+  "cases": [
+    {
+      "name": "empty_retrieval_replan",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "low_relevance_replan",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "exec_failure_revise_abort",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "invalid_replan_rejected",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "two_round_budget_abort",
+      "ok": true,
+      "error": null
+    },
+    {
+      "name": "legacy_untouched",
+      "ok": true,
+      "error": null
+    }
+  ],
+  "note": "确定性断言，不用 Judge recovery_behavior。"
+}

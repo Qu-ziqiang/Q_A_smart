@@ -1,0 +1,277 @@
+{
+  "total_cases": 30,
+  "scores": {
+    "planning_quality": 5.0,
+    "agent_routing": 5.0,
+    "tool_usage": 5.0,
+    "recovery_behavior": 5.0,
+    "final_result_quality": 5.0
+  },
+  "criterion_average": {
+    "planning_quality": 5.0,
+    "agent_routing": 5.0,
+    "tool_usage": 5.0,
+    "recovery_behavior": 5.0,
+    "final_result_quality": 5.0
+  },
+  "overall": 5.0,
+  "verdict": {
+    "pass": 30,
+    "flag": 0,
+    "fail": 0
+  },
+  "pass_rate": 1.0,
+  "fail_rate": 0.0,
+  "deterministic": {
+    "total": 30,
+    "passed": 30,
+    "failed": 0
+  },
+  "per_case": [
+    {
+      "case_id": "bench_retrieval_01",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_retrieval_02",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_retrieval_03",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_retrieval_04",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_retrieval_05",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_recovery_empty_01",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "revise",
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_recovery_empty_02",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "revise",
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_recovery_toolfail_01",
+      "final_state": "abort",
+      "selection_count": 0,
+      "decisions": [
+        "revise",
+        "abort"
+      ]
+    },
+    {
+      "case_id": "bench_recovery_toolfail_02",
+      "final_state": "abort",
+      "selection_count": 0,
+      "decisions": [
+        "revise",
+        "abort"
+      ]
+    },
+    {
+      "case_id": "bench_recovery_toolfail_03",
+      "final_state": "abort",
+      "selection_count": 0,
+      "decisions": [
+        "revise",
+        "abort"
+      ]
+    },
+    {
+      "case_id": "bench_organize_01",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_organize_02",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_organize_03",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_organize_04",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_vision_01",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_vision_02",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_vision_03",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_vision_04",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_vision_05",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_multi_01",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_multi_02",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_multi_03",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_multi_04",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_multi_05",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_complex_01",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_complex_02",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_complex_03",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_complex_04",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_organize_05",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    },
+    {
+      "case_id": "bench_multi_06",
+      "final_state": "done",
+      "selection_count": 2,
+      "decisions": [
+        "continue"
+      ]
+    }
+  ]
+}

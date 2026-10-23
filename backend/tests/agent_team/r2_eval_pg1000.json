@@ -1,0 +1,1782 @@
+{
+ "queries": 18,
+ "pool_size": 10,
+ "gold_file": "D:\\document\\py_prj\\ImageTextSystem\\Smartlmager-sqlite-vec\\backend\\tests\\agent_team\\gold_voc2010_gallery.json",
+ "search_targets": [
+  "image"
+ ],
+ "query_rows": [
+  {
+   "query": "公交车的照片",
+   "class": "bus",
+   "gt_total": 43,
+   "gt_in_pool": 10,
+   "baseline_ids": [
+    "2007_002216",
+    "2007_003711",
+    "2007_000663",
+    "2007_008747",
+    "2008_000032",
+    "2007_000768",
+    "2007_009764",
+    "2008_000075",
+    "2007_005911",
+    "2007_005262"
+   ],
+   "r1_ids": [
+    "2007_002216",
+    "2007_003711",
+    "2007_000663",
+    "2007_008747",
+    "2008_000032",
+    "2007_000768",
+    "2007_009764",
+    "2008_000075",
+    "2007_005911",
+    "2007_005262"
+   ],
+   "r2_ids": [
+    "2007_002216",
+    "2007_003711",
+    "2007_000663",
+    "2007_008747",
+    "2008_000032",
+    "2007_000768",
+    "2007_009764",
+    "2008_000075",
+    "2007_005911",
+    "2007_005262"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "retrieval_ms": 61.5,
+   "r1_ms": 0.1,
+   "r2_ms": 16835.5,
+   "r2_fallback": false
+  },
+  {
+   "query": "摩托车的照片",
+   "class": "motorbike",
+   "gt_total": 49,
+   "gt_in_pool": 10,
+   "baseline_ids": [
+    "2007_002260",
+    "2007_000364",
+    "2007_005951",
+    "2007_009756",
+    "2007_005878",
+    "2008_000144",
+    "2008_000082",
+    "2007_009938",
+    "2007_004380",
+    "2007_007355"
+   ],
+   "r1_ids": [
+    "2007_002260",
+    "2007_000364",
+    "2007_005951",
+    "2007_009756",
+    "2007_005878",
+    "2008_000144",
+    "2008_000082",
+    "2007_009938",
+    "2007_004380",
+    "2007_007355"
+   ],
+   "r2_ids": [
+    "2007_002260",
+    "2007_000364",
+    "2007_005951",
+    "2007_009756",
+    "2007_005878",
+    "2008_000144",
+    "2008_000082",
+    "2007_009938",
+    "2007_004380",
+    "2007_007355"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "retrieval_ms": 79.8,
+   "r1_ms": 0.2,
+   "r2_ms": 15647.5,
+   "r2_fallback": false
+  },
+  {
+   "query": "椅子的照片",
+   "class": "chair",
+   "gt_total": 90,
+   "gt_in_pool": 9,
+   "baseline_ids": [
+    "2008_000089",
+    "2008_000067",
+    "2007_006348",
+    "2007_000063",
+    "2007_001901",
+    "2007_003205",
+    "2007_001149",
+    "2007_005844",
+    "2008_000149",
+    "2007_008110"
+   ],
+   "r1_ids": [
+    "2008_000089",
+    "2008_000067",
+    "2007_006348",
+    "2007_000063",
+    "2007_001901",
+    "2007_003205",
+    "2007_001149",
+    "2007_005844",
+    "2008_000149",
+    "2007_008110"
+   ],
+   "r2_ids": [
+    "2008_000089",
+    "2008_000067",
+    "2007_000063",
+    "2007_005844",
+    "2008_000149",
+    "2007_008110",
+    "2007_006348",
+    "2007_001901",
+    "2007_003205",
+    "2007_001149"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 9,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 4,
+    "unchanged": 2,
+    "degraded": 3
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": true,
+    "top5_changed": true,
+    "mean_abs_move": 2.6,
+    "max_up": 4,
+    "max_down": -4
+   },
+   "retrieval_ms": 83.0,
+   "r1_ms": 0.3,
+   "r2_ms": 17445.1,
+   "r2_fallback": false
+  },
+  {
+   "query": "汽车的照片",
+   "class": "car",
+   "gt_total": 90,
+   "gt_in_pool": 9,
+   "baseline_ids": [
+    "2008_000109",
+    "2008_000105",
+    "2007_005978",
+    "2007_007818",
+    "2007_002281",
+    "2008_000203",
+    "2007_007003",
+    "2007_001857",
+    "2007_003815",
+    "2008_000163"
+   ],
+   "r1_ids": [
+    "2008_000109",
+    "2008_000105",
+    "2007_005978",
+    "2007_007818",
+    "2007_002281",
+    "2008_000203",
+    "2007_007003",
+    "2007_001857",
+    "2007_003815",
+    "2008_000163"
+   ],
+   "r2_ids": [
+    "2008_000105",
+    "2007_002281",
+    "2007_007003",
+    "2007_001857",
+    "2007_003815",
+    "2008_000163",
+    "2008_000109",
+    "2008_000203",
+    "2007_005978",
+    "2007_007818"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 0.8,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 0.8,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 9,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 6,
+    "unchanged": 0,
+    "degraded": 3
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": true,
+    "top5_changed": true,
+    "mean_abs_move": 4.0,
+    "max_up": 4,
+    "max_down": -6
+   },
+   "retrieval_ms": 59.7,
+   "r1_ms": 0.2,
+   "r2_ms": 14652.0,
+   "r2_fallback": false
+  },
+  {
+   "query": "沙发的照片",
+   "class": "sofa",
+   "gt_total": 53,
+   "gt_in_pool": 8,
+   "baseline_ids": [
+    "2007_001149",
+    "2008_000149",
+    "2008_000067",
+    "2007_001901",
+    "2007_003451",
+    "2007_008821",
+    "2007_006348",
+    "2007_003530",
+    "2007_009068",
+    "2007_009435"
+   ],
+   "r1_ids": [
+    "2007_001149",
+    "2008_000149",
+    "2008_000067",
+    "2007_001901",
+    "2007_003451",
+    "2007_008821",
+    "2007_006348",
+    "2007_003530",
+    "2007_009068",
+    "2007_009435"
+   ],
+   "r2_ids": [
+    "2007_001149",
+    "2008_000149",
+    "2007_003451",
+    "2007_009435",
+    "2007_008821",
+    "2007_009068",
+    "2008_000067",
+    "2007_001901",
+    "2007_006348",
+    "2007_003530"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 0.8,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 0.8,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 8,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 4,
+    "unchanged": 2,
+    "degraded": 2
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": true,
+    "top5_changed": true,
+    "mean_abs_move": 2.4,
+    "max_up": 6,
+    "max_down": -4
+   },
+   "retrieval_ms": 69.2,
+   "r1_ms": 0.1,
+   "r2_ms": 15327.8,
+   "r2_fallback": false
+  },
+  {
+   "query": "火车的照片",
+   "class": "train",
+   "gt_total": 45,
+   "gt_in_pool": 10,
+   "baseline_ids": [
+    "2008_000343",
+    "2007_002728",
+    "2007_009436",
+    "2007_003587",
+    "2007_004649",
+    "2007_000123",
+    "2007_007726",
+    "2007_000629",
+    "2007_004951",
+    "2007_000042"
+   ],
+   "r1_ids": [
+    "2008_000343",
+    "2007_002728",
+    "2007_009436",
+    "2007_003587",
+    "2007_004649",
+    "2007_000123",
+    "2007_007726",
+    "2007_000629",
+    "2007_004951",
+    "2007_000042"
+   ],
+   "r2_ids": [
+    "2008_000343",
+    "2007_002728",
+    "2007_009436",
+    "2007_003587",
+    "2007_004649",
+    "2007_000123",
+    "2007_007726",
+    "2007_000629",
+    "2007_004951",
+    "2007_000042"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "retrieval_ms": 85.2,
+   "r1_ms": 0.1,
+   "r2_ms": 13373.0,
+   "r2_fallback": false
+  },
+  {
+   "query": "牛的照片",
+   "class": "cow",
+   "gt_total": 34,
+   "gt_in_pool": 10,
+   "baseline_ids": [
+    "2007_002903",
+    "2007_009245",
+    "2007_004500",
+    "2007_000464",
+    "2007_002088",
+    "2007_009897",
+    "2007_001917",
+    "2007_008973",
+    "2007_005547",
+    "2008_000335"
+   ],
+   "r1_ids": [
+    "2007_002903",
+    "2007_009245",
+    "2007_004500",
+    "2007_000464",
+    "2007_002088",
+    "2007_009897",
+    "2007_001917",
+    "2007_008973",
+    "2007_005547",
+    "2008_000335"
+   ],
+   "r2_ids": [
+    "2007_002903",
+    "2007_009245",
+    "2007_004500",
+    "2007_000464",
+    "2007_002088",
+    "2007_009897",
+    "2007_001917",
+    "2007_008973",
+    "2007_005547",
+    "2008_000335"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "retrieval_ms": 95.0,
+   "r1_ms": 0.1,
+   "r2_ms": 13028.4,
+   "r2_fallback": false
+  },
+  {
+   "query": "猫的照片",
+   "class": "cat",
+   "gt_total": 61,
+   "gt_in_pool": 10,
+   "baseline_ids": [
+    "2007_002445",
+    "2007_003991",
+    "2007_003788",
+    "2007_002470",
+    "2007_007524",
+    "2007_008575",
+    "2008_000181",
+    "2008_000196",
+    "2008_000464",
+    "2008_000401"
+   ],
+   "r1_ids": [
+    "2007_002445",
+    "2007_003991",
+    "2007_003788",
+    "2007_002470",
+    "2007_007524",
+    "2007_008575",
+    "2008_000181",
+    "2008_000196",
+    "2008_000464",
+    "2008_000401"
+   ],
+   "r2_ids": [
+    "2007_002445",
+    "2007_003991",
+    "2007_003788",
+    "2007_002470",
+    "2007_007524",
+    "2007_008575",
+    "2008_000181",
+    "2008_000196",
+    "2008_000464",
+    "2008_000401"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "retrieval_ms": 85.2,
+   "r1_ms": 0.1,
+   "r2_ms": 11640.6,
+   "r2_fallback": false
+  },
+  {
+   "query": "瓶子的照片",
+   "class": "bottle",
+   "gt_total": 58,
+   "gt_in_pool": 8,
+   "baseline_ids": [
+    "2007_000346",
+    "2007_003506",
+    "2007_004468",
+    "2007_001408",
+    "2008_000306",
+    "2007_003431",
+    "2007_005304",
+    "2007_005428",
+    "2007_002953",
+    "2008_000015"
+   ],
+   "r1_ids": [
+    "2007_000346",
+    "2007_003506",
+    "2007_004468",
+    "2007_001408",
+    "2008_000306",
+    "2007_003431",
+    "2007_005304",
+    "2007_005428",
+    "2007_002953",
+    "2008_000015"
+   ],
+   "r2_ids": [
+    "2007_000346",
+    "2007_004468",
+    "2007_003431",
+    "2007_005304",
+    "2007_005428",
+    "2007_002953",
+    "2007_003506",
+    "2007_001408",
+    "2008_000306",
+    "2008_000015"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 0.6,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 0.6,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 8,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 5,
+    "unchanged": 2,
+    "degraded": 1
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": true,
+    "top5_changed": true,
+    "mean_abs_move": 2.6,
+    "max_up": 3,
+    "max_down": -5
+   },
+   "retrieval_ms": 98.8,
+   "r1_ms": 0.1,
+   "r2_ms": 12289.3,
+   "r2_fallback": false
+  },
+  {
+   "query": "电视或显示器的照片",
+   "class": "tvmonitor",
+   "gt_total": 62,
+   "gt_in_pool": 8,
+   "baseline_ids": [
+    "2007_006066",
+    "2007_004392",
+    "2007_006704",
+    "2008_000305",
+    "2007_004190",
+    "2008_000067",
+    "2007_001149",
+    "2007_000039",
+    "2008_000002",
+    "2007_002132"
+   ],
+   "r1_ids": [
+    "2007_006066",
+    "2007_004392",
+    "2007_006704",
+    "2008_000305",
+    "2007_004190",
+    "2008_000067",
+    "2007_001149",
+    "2007_000039",
+    "2008_000002",
+    "2007_002132"
+   ],
+   "r2_ids": [
+    "2007_006066",
+    "2007_006704",
+    "2008_000305",
+    "2007_001149",
+    "2008_000002",
+    "2007_002132",
+    "2007_004190",
+    "2007_000039",
+    "2007_004392",
+    "2008_000067"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 0.8,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 0.8,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 8,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 5,
+    "unchanged": 2,
+    "degraded": 1
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": true,
+    "top5_changed": true,
+    "mean_abs_move": 2.6,
+    "max_up": 4,
+    "max_down": -7
+   },
+   "retrieval_ms": 92.6,
+   "r1_ms": 0.1,
+   "r2_ms": 11675.3,
+   "r2_fallback": false
+  },
+  {
+   "query": "盆栽的照片",
+   "class": "pottedplant",
+   "gt_total": 56,
+   "gt_in_pool": 9,
+   "baseline_ids": [
+    "2007_002284",
+    "2007_005813",
+    "2007_002361",
+    "2007_004558",
+    "2008_000287",
+    "2007_005857",
+    "2007_003506",
+    "2008_000391",
+    "2008_000306",
+    "2007_007624"
+   ],
+   "r1_ids": [
+    "2007_002284",
+    "2007_005813",
+    "2007_002361",
+    "2007_004558",
+    "2008_000287",
+    "2007_005857",
+    "2007_003506",
+    "2008_000391",
+    "2008_000306",
+    "2007_007624"
+   ],
+   "r2_ids": [
+    "2007_002284",
+    "2007_005813",
+    "2007_004558",
+    "2008_000287",
+    "2007_005857",
+    "2007_003506",
+    "2008_000391",
+    "2007_007624",
+    "2007_002361",
+    "2008_000306"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 9,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 6,
+    "unchanged": 2,
+    "degraded": 1
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": true,
+    "top5_changed": true,
+    "mean_abs_move": 1.4,
+    "max_up": 2,
+    "max_down": -6
+   },
+   "retrieval_ms": 74.5,
+   "r1_ms": 0.1,
+   "r2_ms": 11895.1,
+   "r2_fallback": false
+  },
+  {
+   "query": "羊的照片",
+   "class": "sheep",
+   "gt_total": 34,
+   "gt_in_pool": 10,
+   "baseline_ids": [
+    "2007_006136",
+    "2007_006678",
+    "2007_003190",
+    "2007_004768",
+    "2007_000175",
+    "2007_006832",
+    "2007_006944",
+    "2007_002845",
+    "2007_004969",
+    "2007_002618"
+   ],
+   "r1_ids": [
+    "2007_006136",
+    "2007_006678",
+    "2007_003190",
+    "2007_004768",
+    "2007_000175",
+    "2007_006832",
+    "2007_006944",
+    "2007_002845",
+    "2007_004969",
+    "2007_002618"
+   ],
+   "r2_ids": [
+    "2007_006136",
+    "2007_006678",
+    "2007_003190",
+    "2007_004768",
+    "2007_000175",
+    "2007_006832",
+    "2007_006944",
+    "2007_002845",
+    "2007_004969",
+    "2007_002618"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "retrieval_ms": 88.7,
+   "r1_ms": 0.1,
+   "r2_ms": 12330.9,
+   "r2_fallback": false
+  },
+  {
+   "query": "自行车的照片",
+   "class": "bicycle",
+   "gt_total": 40,
+   "gt_in_pool": 9,
+   "baseline_ids": [
+    "2008_000133",
+    "2007_009788",
+    "2007_003621",
+    "2008_000466",
+    "2007_000584",
+    "2008_000194",
+    "2008_000196",
+    "2007_002643",
+    "2007_000572",
+    "2007_006317"
+   ],
+   "r1_ids": [
+    "2008_000133",
+    "2007_009788",
+    "2007_003621",
+    "2008_000466",
+    "2007_000584",
+    "2008_000194",
+    "2008_000196",
+    "2007_002643",
+    "2007_000572",
+    "2007_006317"
+   ],
+   "r2_ids": [
+    "2008_000133",
+    "2007_009788",
+    "2007_003621",
+    "2008_000466",
+    "2007_000584",
+    "2008_000194",
+    "2007_000572",
+    "2007_006317",
+    "2008_000196",
+    "2007_002643"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 9,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 2,
+    "unchanged": 6,
+    "degraded": 1
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": true,
+    "top5_changed": false,
+    "mean_abs_move": 0.8,
+    "max_up": 2,
+    "max_down": -2
+   },
+   "retrieval_ms": 88.3,
+   "r1_ms": 0.1,
+   "r2_ms": 15121.3,
+   "r2_fallback": false
+  },
+  {
+   "query": "船的照片",
+   "class": "boat",
+   "gt_total": 48,
+   "gt_in_pool": 10,
+   "baseline_ids": [
+    "2007_000529",
+    "2007_001698",
+    "2007_005705",
+    "2007_009533",
+    "2007_006549",
+    "2007_002403",
+    "2007_001487",
+    "2008_000007",
+    "2007_002719",
+    "2008_000120"
+   ],
+   "r1_ids": [
+    "2007_000529",
+    "2007_001698",
+    "2007_005705",
+    "2007_009533",
+    "2007_006549",
+    "2007_002403",
+    "2007_001487",
+    "2008_000007",
+    "2007_002719",
+    "2008_000120"
+   ],
+   "r2_ids": [
+    "2007_000529",
+    "2007_001698",
+    "2007_005705",
+    "2007_009533",
+    "2007_006549",
+    "2007_002403",
+    "2007_001487",
+    "2008_000007",
+    "2007_002719",
+    "2008_000120"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "retrieval_ms": 89.3,
+   "r1_ms": 0.1,
+   "r2_ms": 12891.7,
+   "r2_fallback": false
+  },
+  {
+   "query": "飞机的照片",
+   "class": "aeroplane",
+   "gt_total": 49,
+   "gt_in_pool": 10,
+   "baseline_ids": [
+    "2007_003876",
+    "2007_003000",
+    "2007_002619",
+    "2007_007698",
+    "2008_000037",
+    "2007_005600",
+    "2007_000032",
+    "2007_005043",
+    "2007_005509",
+    "2008_000151"
+   ],
+   "r1_ids": [
+    "2007_003876",
+    "2007_003000",
+    "2007_002619",
+    "2007_007698",
+    "2008_000037",
+    "2007_005600",
+    "2007_000032",
+    "2007_005043",
+    "2007_005509",
+    "2008_000151"
+   ],
+   "r2_ids": [
+    "2007_003876",
+    "2007_003000",
+    "2007_002619",
+    "2007_007698",
+    "2008_000037",
+    "2007_005600",
+    "2007_000032",
+    "2007_005043",
+    "2007_005509",
+    "2008_000151"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "retrieval_ms": 92.9,
+   "r1_ms": 0.1,
+   "r2_ms": 12684.5,
+   "r2_fallback": false
+  },
+  {
+   "query": "餐桌的照片",
+   "class": "diningtable",
+   "gt_total": 55,
+   "gt_in_pool": 10,
+   "baseline_ids": [
+    "2007_001609",
+    "2007_005844",
+    "2007_002368",
+    "2007_003668",
+    "2007_006241",
+    "2007_000250",
+    "2007_001677",
+    "2007_007021",
+    "2007_009706",
+    "2008_000227"
+   ],
+   "r1_ids": [
+    "2007_001609",
+    "2007_005844",
+    "2007_002368",
+    "2007_003668",
+    "2007_006241",
+    "2007_000250",
+    "2007_001677",
+    "2007_007021",
+    "2007_009706",
+    "2008_000227"
+   ],
+   "r2_ids": [
+    "2007_001609",
+    "2007_005844",
+    "2007_002368",
+    "2007_003668",
+    "2007_006241",
+    "2007_000250",
+    "2007_001677",
+    "2007_007021",
+    "2007_009706",
+    "2008_000227"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "retrieval_ms": 89.2,
+   "r1_ms": 0.1,
+   "r2_ms": 14026.7,
+   "r2_fallback": false
+  },
+  {
+   "query": "马的照片",
+   "class": "horse",
+   "gt_total": 53,
+   "gt_in_pool": 9,
+   "baseline_ids": [
+    "2008_000428",
+    "2008_000142",
+    "2007_001960",
+    "2007_001724",
+    "2008_000371",
+    "2008_000076",
+    "2007_006134",
+    "2008_000141",
+    "2008_000009",
+    "2007_004902"
+   ],
+   "r1_ids": [
+    "2008_000428",
+    "2008_000142",
+    "2007_001960",
+    "2007_001724",
+    "2008_000371",
+    "2008_000076",
+    "2007_006134",
+    "2008_000141",
+    "2008_000009",
+    "2007_004902"
+   ],
+   "r2_ids": [
+    "2008_000428",
+    "2008_000142",
+    "2007_001960",
+    "2008_000371",
+    "2008_000076",
+    "2007_006134",
+    "2008_000141",
+    "2007_004902",
+    "2007_001724",
+    "2008_000009"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 9,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 5,
+    "unchanged": 3,
+    "degraded": 1
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": true,
+    "top5_changed": true,
+    "mean_abs_move": 1.2,
+    "max_up": 2,
+    "max_down": -5
+   },
+   "retrieval_ms": 78.1,
+   "r1_ms": 0.2,
+   "r2_ms": 11647.9,
+   "r2_fallback": false
+  },
+  {
+   "query": "鸟的照片",
+   "class": "bird",
+   "gt_total": 52,
+   "gt_in_pool": 10,
+   "baseline_ids": [
+    "2007_002896",
+    "2007_006865",
+    "2007_009422",
+    "2007_007481",
+    "2007_004143",
+    "2007_001289",
+    "2007_003267",
+    "2007_008670",
+    "2007_009759",
+    "2007_009817"
+   ],
+   "r1_ids": [
+    "2007_002896",
+    "2007_006865",
+    "2007_009422",
+    "2007_007481",
+    "2007_004143",
+    "2007_001289",
+    "2007_003267",
+    "2007_008670",
+    "2007_009759",
+    "2007_009817"
+   ],
+   "r2_ids": [
+    "2007_002896",
+    "2007_006865",
+    "2007_009422",
+    "2007_007481",
+    "2007_004143",
+    "2007_001289",
+    "2007_003267",
+    "2007_008670",
+    "2007_009759",
+    "2007_009817"
+   ],
+   "baseline": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r1": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "r2": {
+    "hit1": 1,
+    "hit3": 1,
+    "hit5": 1,
+    "mrr": 1.0,
+    "p5": 1.0,
+    "first_rank": 1
+   },
+   "delta_first_r1": 0,
+   "delta_first_r2": 0,
+   "delta_item_r1": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "delta_item_r2": {
+    "improved": 0,
+    "unchanged": 10,
+    "degraded": 0
+   },
+   "movement_r1": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "movement_r2": {
+    "order_changed": false,
+    "top5_changed": false,
+    "mean_abs_move": 0.0,
+    "max_up": 0,
+    "max_down": 0
+   },
+   "retrieval_ms": 81.4,
+   "r1_ms": 0.2,
+   "r2_ms": 14698.4,
+   "r2_fallback": false
+  }
+ ],
+ "macro": {
+  "baseline": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "hit5": 1.0,
+   "mrr": 1.0,
+   "p5": 0.9444
+  },
+  "r1": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "hit5": 1.0,
+   "mrr": 1.0,
+   "p5": 0.9444
+  },
+  "r2": {
+   "hit1": 1.0,
+   "hit3": 1.0,
+   "hit5": 1.0,
+   "mrr": 1.0,
+   "p5": 1.0
+  }
+ },
+ "candidate_recall10_pooled": 0.1739,
+ "order_changed_queries": {
+  "r1": 0,
+  "r2": 8
+ },
+ "top5_changed_queries": {
+  "r1": 0,
+  "r2": 7
+ },
+ "r2_stats": {
+  "calls": 180,
+  "errors": 0,
+  "avg_latency_per_image_ms": 1373.4,
+  "total_ms": 247209.4
+ },
+ "latency_mean_ms": {
+  "retrieval": 82.9,
+  "r1_rerank": 0.1,
+  "r2_rerank": 13733.9
+ },
+ "fallback_queries": []
+}

@@ -1,0 +1,23 @@
+# 核心模型配置（多语言 CLIP）
+MODEL_PATH: "sentence-transformers/clip-ViT-B-32-multilingual-v1"
+EMBEDDING_DIMENSION: 512
+
+# PostgreSQL + pgvector
+DATABASE_URL: "postgresql://smartimager:smartimager@127.0.0.1:5432/smartimager"
+PG_HOST: "127.0.0.1"
+PG_PORT: 5432
+PG_USER: "smartimager"
+PG_PASSWORD: "smartimager"
+PG_DATABASE: "smartimager"
+
+# 旧 SQLite 路径（仅迁移脚本使用）
+DB_PATH: "./data/db/smartimager.db"
+
+UPLOAD_DIR: "./data/images"
+TEMP_DIR: "./data/temp"
+TEXT_VECTOR_CACHE_DIR: "./data/caches/text_vector_cache"
+IMAGE_VECTOR_CACHE_DIR: "./data/caches/image_vector_cache"
+MAX_CACHE_SIZE_GB: 1.5
+
+HOST: "0.0.0.0"
+PORT: 8000

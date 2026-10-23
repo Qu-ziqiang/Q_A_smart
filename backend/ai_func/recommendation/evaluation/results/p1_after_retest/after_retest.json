@@ -1,0 +1,3115 @@
+{
+  "arm": "after",
+  "lint": false,
+  "meta": {
+    "n": 240,
+    "elapsed_s": 573.5
+  },
+  "records": [
+    {
+      "case_id": "bench_1_agent_benchmark_001",
+      "category": "retrieval",
+      "query": "找清晰通透的海边日落图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_002",
+      "category": "retrieval",
+      "query": "找高级灰调的海边日落图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_003",
+      "category": "retrieval",
+      "query": "找自然光影的海边日落图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_004",
+      "category": "retrieval",
+      "query": "找广角纵深的海边日落图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_005",
+      "category": "retrieval",
+      "query": "找清晰通透的高山湖泊图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_006",
+      "category": "retrieval",
+      "query": "找高级灰调的高山湖泊图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_007",
+      "category": "retrieval",
+      "query": "找自然光影的高山湖泊图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_008",
+      "category": "retrieval",
+      "query": "找广角纵深的高山湖泊图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_009",
+      "category": "retrieval",
+      "query": "找清晰通透的现代建筑图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_010",
+      "category": "retrieval",
+      "query": "找高级灰调的现代建筑图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_011",
+      "category": "retrieval",
+      "query": "找自然光影的现代建筑图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_012",
+      "category": "retrieval",
+      "query": "找广角纵深的现代建筑图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_013",
+      "category": "retrieval",
+      "query": "找清晰通透的工业厂房图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_014",
+      "category": "retrieval",
+      "query": "找高级灰调的工业厂房图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_015",
+      "category": "retrieval",
+      "query": "找自然光影的工业厂房图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_016",
+      "category": "retrieval",
+      "query": "找广角纵深的工业厂房图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_017",
+      "category": "retrieval",
+      "query": "找清晰通透的古镇街道图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_018",
+      "category": "retrieval",
+      "query": "找高级灰调的古镇街道图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_019",
+      "category": "retrieval",
+      "query": "找自然光影的古镇街道图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_020",
+      "category": "retrieval",
+      "query": "找广角纵深的古镇街道图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_021",
+      "category": "retrieval",
+      "query": "找清晰通透的霓虹夜景图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_022",
+      "category": "retrieval",
+      "query": "找高级灰调的霓虹夜景图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_023",
+      "category": "retrieval",
+      "query": "找自然光影的霓虹夜景图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_024",
+      "category": "retrieval",
+      "query": "找广角纵深的霓虹夜景图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_025",
+      "category": "retrieval",
+      "query": "找清晰通透的极简室内图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_026",
+      "category": "retrieval",
+      "query": "找高级灰调的极简室内图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_027",
+      "category": "retrieval",
+      "query": "找自然光影的极简室内图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_028",
+      "category": "retrieval",
+      "query": "找广角纵深的极简室内图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_029",
+      "category": "retrieval",
+      "query": "找清晰通透的美食特写图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_030",
+      "category": "retrieval",
+      "query": "找高级灰调的美食特写图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_031",
+      "category": "retrieval",
+      "query": "找自然光影的美食特写图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_032",
+      "category": "retrieval",
+      "query": "找广角纵深的美食特写图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_033",
+      "category": "retrieval",
+      "query": "找清晰通透的森林晨雾图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_034",
+      "category": "retrieval",
+      "query": "找高级灰调的森林晨雾图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_035",
+      "category": "retrieval",
+      "query": "找自然光影的森林晨雾图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_036",
+      "category": "retrieval",
+      "query": "找广角纵深的森林晨雾图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_037",
+      "category": "retrieval",
+      "query": "找清晰通透的城市车流图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_038",
+      "category": "retrieval",
+      "query": "找高级灰调的城市车流图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_039",
+      "category": "retrieval",
+      "query": "找自然光影的城市车流图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_040",
+      "category": "retrieval",
+      "query": "找广角纵深的城市车流图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_001",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后按地点分组整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_002",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后按拍摄地点分类输出",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_003",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后整理成地点相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_004",
+      "category": "organization",
+      "query": "搜索雪地村庄相关照片，然后按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_005",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后按地点分组整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_006",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后按拍摄地点分类输出",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_007",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后整理成地点相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_008",
+      "category": "organization",
+      "query": "搜索沙漠公路相关照片，然后按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_009",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后按地点分组整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_010",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后按拍摄地点分类输出",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_011",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后整理成地点相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_012",
+      "category": "organization",
+      "query": "搜索港口集装箱相关照片，然后按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_013",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后按地点分组整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_014",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后按拍摄地点分类输出",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_015",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后整理成地点相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_016",
+      "category": "organization",
+      "query": "搜索雨夜街景相关照片，然后按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_017",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后按地点分组整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_018",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后按拍摄地点分类输出",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_019",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后整理成地点相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_020",
+      "category": "organization",
+      "query": "搜索樱花公园相关照片，然后按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_021",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后按地点分组整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_022",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后按拍摄地点分类输出",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_023",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后整理成地点相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_024",
+      "category": "organization",
+      "query": "搜索秋日枫叶相关照片，然后按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_025",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后按地点分组整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_026",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后按拍摄地点分类输出",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_027",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后整理成地点相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_028",
+      "category": "organization",
+      "query": "搜索水下珊瑚相关照片，然后按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_029",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后按地点分组整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_030",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后按拍摄地点分类输出",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_031",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后整理成地点相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_032",
+      "category": "organization",
+      "query": "搜索飞机云海相关照片，然后按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_033",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后按地点分组整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_034",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后按拍摄地点分类输出",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_035",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后整理成地点相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_036",
+      "category": "organization",
+      "query": "搜索老式茶馆相关照片，然后按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_037",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后按地点分组整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_038",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后按拍摄地点分类输出",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_039",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后整理成地点相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_040",
+      "category": "organization",
+      "query": "搜索儿童游乐场相关照片，然后按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_001",
+      "category": "vision",
+      "query": "检索海边日落图片并分析画面主体内容",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_002",
+      "category": "vision",
+      "query": "检索海边日落图片并识别画面中的主要属性与元素",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_003",
+      "category": "vision",
+      "query": "检索海边日落图片并判断图片的风格倾向",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_004",
+      "category": "vision",
+      "query": "检索海边日落图片并核验图片是否符合任务描述",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_005",
+      "category": "vision",
+      "query": "检索海边日落图片并判断适合作为壁纸还是海报素材",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_006",
+      "category": "vision",
+      "query": "检索高山湖泊图片并分析画面主体内容",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_007",
+      "category": "vision",
+      "query": "检索高山湖泊图片并识别画面中的主要属性与元素",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_008",
+      "category": "vision",
+      "query": "检索高山湖泊图片并判断图片的风格倾向",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_009",
+      "category": "vision",
+      "query": "检索高山湖泊图片并核验图片是否符合任务描述",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_010",
+      "category": "vision",
+      "query": "检索高山湖泊图片并判断适合作为壁纸还是海报素材",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_011",
+      "category": "vision",
+      "query": "检索现代建筑图片并分析画面主体内容",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_012",
+      "category": "vision",
+      "query": "检索现代建筑图片并识别画面中的主要属性与元素",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_013",
+      "category": "vision",
+      "query": "检索现代建筑图片并判断图片的风格倾向",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_014",
+      "category": "vision",
+      "query": "检索现代建筑图片并核验图片是否符合任务描述",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_015",
+      "category": "vision",
+      "query": "检索现代建筑图片并判断适合作为壁纸还是海报素材",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_016",
+      "category": "vision",
+      "query": "检索工业厂房图片并分析画面主体内容",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_017",
+      "category": "vision",
+      "query": "检索工业厂房图片并识别画面中的主要属性与元素",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_018",
+      "category": "vision",
+      "query": "检索工业厂房图片并判断图片的风格倾向",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_019",
+      "category": "vision",
+      "query": "检索工业厂房图片并核验图片是否符合任务描述",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_020",
+      "category": "vision",
+      "query": "检索工业厂房图片并判断适合作为壁纸还是海报素材",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_021",
+      "category": "vision",
+      "query": "检索古镇街道图片并分析画面主体内容",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_022",
+      "category": "vision",
+      "query": "检索古镇街道图片并识别画面中的主要属性与元素",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_023",
+      "category": "vision",
+      "query": "检索古镇街道图片并判断图片的风格倾向",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_024",
+      "category": "vision",
+      "query": "检索古镇街道图片并核验图片是否符合任务描述",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_025",
+      "category": "vision",
+      "query": "检索古镇街道图片并判断适合作为壁纸还是海报素材",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_026",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并分析画面主体内容",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_027",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并识别画面中的主要属性与元素",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_028",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并判断图片的风格倾向",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_029",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并核验图片是否符合任务描述",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_3_agent_benchmark_030",
+      "category": "vision",
+      "query": "检索霓虹夜景图片并判断适合作为壁纸还是海报素材",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_001",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_002",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_003",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_004",
+      "category": "multi_agent",
+      "query": "围绕海边日落做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_005",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_006",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_007",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_008",
+      "category": "multi_agent",
+      "query": "围绕高山湖泊做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_009",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_010",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_011",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_012",
+      "category": "multi_agent",
+      "query": "围绕现代建筑做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_013",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_014",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_015",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_016",
+      "category": "multi_agent",
+      "query": "围绕工业厂房做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_017",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_018",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_019",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_020",
+      "category": "multi_agent",
+      "query": "围绕古镇街道做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_021",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_022",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_023",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_024",
+      "category": "multi_agent",
+      "query": "围绕霓虹夜景做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_025",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_026",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_027",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_028",
+      "category": "multi_agent",
+      "query": "围绕极简室内做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_029",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_030",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_031",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_032",
+      "category": "multi_agent",
+      "query": "围绕美食特写做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_033",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_034",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_035",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_036",
+      "category": "multi_agent",
+      "query": "围绕森林晨雾做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_037",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后做成带地点分类的专题图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_038",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后整理成适合汇报展示的分组相册",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_039",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后做一版带内容核验的图集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_4_agent_benchmark_040",
+      "category": "multi_agent",
+      "query": "围绕城市车流做一个完整图集：检索、分类、逐张核验内容，最后产出适合做封面的精选合集",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_001",
+      "category": "recovery",
+      "query": "搜索私人渔场的清晨码头的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_002",
+      "category": "recovery",
+      "query": "搜索废弃矿山的运输轨道的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_003",
+      "category": "recovery",
+      "query": "搜索十九世纪欧洲蒸汽车站的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_004",
+      "category": "recovery",
+      "query": "搜索深海热泉口的生物的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_005",
+      "category": "recovery",
+      "query": "搜索极地苔原夏季花海的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_006",
+      "category": "recovery",
+      "query": "搜索古法手工纸作坊的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_007",
+      "category": "recovery",
+      "query": "搜索楼顶农场大棚的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_008",
+      "category": "recovery",
+      "query": "搜索古董胶片相机内部的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_009",
+      "category": "recovery",
+      "query": "搜索城市轻轨高架下的市集的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_010",
+      "category": "recovery",
+      "query": "搜索溶洞暗河倒影的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_011",
+      "category": "recovery",
+      "query": "搜索无人区盐湖星空的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_012",
+      "category": "recovery",
+      "query": "搜索老厂区改造的咖啡馆的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_013",
+      "category": "recovery",
+      "query": "搜索热带雨林树冠层的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_014",
+      "category": "recovery",
+      "query": "搜索冰洞蓝光纹理的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_015",
+      "category": "recovery",
+      "query": "搜索手工皮具工坊的图片",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_016",
+      "category": "recovery",
+      "query": "模拟搜索服务故障获取图片（场景16）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_017",
+      "category": "recovery",
+      "query": "模拟检索工具连续不可用（场景17）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_018",
+      "category": "recovery",
+      "query": "模拟 MCP 检索服务中断（场景18）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_019",
+      "category": "recovery",
+      "query": "模拟远端图片搜索超时（场景19）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_020",
+      "category": "recovery",
+      "query": "模拟数据库检索异常重试失败（场景20）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_021",
+      "category": "recovery",
+      "query": "模拟搜索服务故障获取图片（场景21）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_022",
+      "category": "recovery",
+      "query": "模拟检索工具连续不可用（场景22）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_023",
+      "category": "recovery",
+      "query": "模拟 MCP 检索服务中断（场景23）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_024",
+      "category": "recovery",
+      "query": "模拟远端图片搜索超时（场景24）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_025",
+      "category": "recovery",
+      "query": "模拟数据库检索异常重试失败（场景25）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_026",
+      "category": "recovery",
+      "query": "模拟搜索服务故障获取图片（场景26）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_027",
+      "category": "recovery",
+      "query": "模拟检索工具连续不可用（场景27）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_028",
+      "category": "recovery",
+      "query": "模拟 MCP 检索服务中断（场景28）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_029",
+      "category": "recovery",
+      "query": "模拟远端图片搜索超时（场景29）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_5_agent_benchmark_030",
+      "category": "recovery",
+      "query": "模拟数据库检索异常重试失败（场景30）",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_001",
+      "category": "complex",
+      "query": "帮我找适合旅游宣传册的图片，并分析哪些最适合",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_002",
+      "category": "complex",
+      "query": "帮我找适合旅游宣传册的图片，并分析哪些最适合（结合季节光线偏好）",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_003",
+      "category": "complex",
+      "query": "找一套北欧风装修参考图，按房间分类并说明哪些适合墙面装饰",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_004",
+      "category": "complex",
+      "query": "找一套北欧风装修参考图，按房间分类并说明哪些适合墙面装饰（结合季节光线偏好）",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_005",
+      "category": "complex",
+      "query": "我需要中学自然课课件的配图：风景要有层次，适合讲解地形",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_006",
+      "category": "complex",
+      "query": "我需要中学自然课课件的配图：风景要有层次，适合讲解地形（结合季节光线偏好）",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_007",
+      "category": "complex",
+      "query": "收集适合放在年度总结 PPT 里的城市发展对比图",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_008",
+      "category": "complex",
+      "query": "收集适合放在年度总结 PPT 里的城市发展对比图（结合季节光线偏好）",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_009",
+      "category": "complex",
+      "query": "找适合电商详情页首屏的高清产品氛围图并说明推荐理由",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_010",
+      "category": "complex",
+      "query": "找适合电商详情页首屏的高清产品氛围图并说明推荐理由（结合季节光线偏好）",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_011",
+      "category": "complex",
+      "query": "找婚礼跟拍风格的样片作为参考，标注哪几张最接近纪实风",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_012",
+      "category": "complex",
+      "query": "找婚礼跟拍风格的样片作为参考，标注哪几张最接近纪实风（结合季节光线偏好）",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_013",
+      "category": "complex",
+      "query": "为健身工作室找硬朗风格的环境背景图并核验内容",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_014",
+      "category": "complex",
+      "query": "为健身工作室找硬朗风格的环境背景图并核验内容（结合季节光线偏好）",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_015",
+      "category": "complex",
+      "query": "找儿童绘本风格的插画用于故事创作参考",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_016",
+      "category": "complex",
+      "query": "找儿童绘本风格的插画用于故事创作参考（结合季节光线偏好）",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_017",
+      "category": "complex",
+      "query": "为博物馆临时展寻找墙面大幅摄影并给出布展建议",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_018",
+      "category": "complex",
+      "query": "为博物馆临时展寻找墙面大幅摄影并给出布展建议（结合季节光线偏好）",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_019",
+      "category": "complex",
+      "query": "找能当旅行杂志封面的候选图片，分析哪张最有冲击力",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "bench_6_agent_benchmark_020",
+      "category": "complex",
+      "query": "找能当旅行杂志封面的候选图片，分析哪张最有冲击力（结合季节光线偏好）",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_001",
+      "category": "organization",
+      "query": "找旅行照片，按地点分组后再每组选2张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_002",
+      "category": "organization",
+      "query": "找城市夜景，按拍摄时间从新到旧排序",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "sort_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_003",
+      "category": "organization",
+      "query": "找建筑照片并去掉重复的同一张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "deduplicate_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_004",
+      "category": "organization",
+      "query": "找风景图，只要横向 jpg，再按宽度从大到小排",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "sort_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_005",
+      "category": "organization",
+      "query": "找动物照片，选出评分最高的5张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "sort_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_006",
+      "category": "organization",
+      "query": "先找海边照片，再按候选和查询的相关度重排",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "rerank_candidates",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_007",
+      "category": "organization",
+      "query": "找2025年旅行照，按地点分组后每组留1张",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_008",
+      "category": "organization",
+      "query": "找已有标签包含旅行的照片并按年份整理",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_009",
+      "category": "organization",
+      "query": "找宽度至少1920的图片，再按标题字母序排列",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_010",
+      "category": "organization",
+      "query": "找室内照片，去掉重复后再选3张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "deduplicate_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_011",
+      "category": "vision",
+      "query": "找花卉照片并确认画面里确实有红色花朵",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_012",
+      "category": "vision",
+      "query": "找派对候选，再判断画面中是否看得见生日蛋糕",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_013",
+      "category": "vision",
+      "query": "找人像再确认哪些人物眼睛清晰可见",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_014",
+      "category": "vision",
+      "query": "找横向JPG，再确认画面里有海滩",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_015",
+      "category": "vision",
+      "query": "找商品图，比较包装主色是不是蓝色",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_016",
+      "category": "vision",
+      "query": "找建筑照片，再比较哪几张构图更对称",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "analyze_visual",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_017",
+      "category": "vision",
+      "query": "找旅行照并确认画面里同时有山和湖",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_018",
+      "category": "vision",
+      "query": "找2025年照片，再确认画面中有人骑马",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_019",
+      "category": "organization",
+      "query": "找夜景，只要最相关的前8张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_020",
+      "category": "organization",
+      "query": "找猫的照片，按文件类型分类",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_021",
+      "category": "organization",
+      "query": "找风景照，先过滤竖图再按时间排序",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_022",
+      "category": "organization",
+      "query": "找街道照片去重，再按地点分组",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "deduplicate_images",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_023",
+      "category": "organization",
+      "query": "找美食图，按相关度重排后选前4张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "rerank_candidates",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_024",
+      "category": "organization",
+      "query": "找已有旅行标签的横向照片并整理到各地分组",
+      "plan_ok": true,
+      "final_state": "abort",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_025",
+      "category": "organization",
+      "query": "找湖景，按高度从高到低排序后选3张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "sort_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_026",
+      "category": "vision",
+      "query": "找婚礼照片并核验画面是否有蛋糕",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_027",
+      "category": "vision",
+      "query": "找儿童室内照，再识别画面中是否真的有儿童",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_028",
+      "category": "vision",
+      "query": "找阴天风景，再判断天空是否阴沉",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_029",
+      "category": "vision",
+      "query": "找宽图并判断构图是否适合做横幅",
+      "plan_ok": false,
+      "final_state": "abort",
+      "plan_task_types": [],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_030",
+      "category": "vision",
+      "query": "找自行车照片，确认能不能看见红色自行车",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_031",
+      "category": "organization",
+      "query": "找雪景，按地点分组后每组推荐1张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_032",
+      "category": "organization",
+      "query": "找博物馆展品图，去掉重复id再按时间排",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "deduplicate_images",
+        "sort_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_033",
+      "category": "organization",
+      "query": "找咖啡馆照片，只要jpg并且按相关度重排",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "rerank_candidates",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_034",
+      "category": "organization",
+      "query": "找日落，选出最相关的6张不要分组",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_035",
+      "category": "organization",
+      "query": "找山脉照片并按年份整理，再每组留2张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_036",
+      "category": "organization",
+      "query": "找古镇街道，过滤已有标签后再按地点归档",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "filter_metadata",
+        "group_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_037",
+      "category": "vision",
+      "query": "找桌面静物，确认画面里有没有咖啡杯",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_038",
+      "category": "organization",
+      "query": "找夜市照片，重排后去掉重复再选5张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "rerank_candidates",
+        "deduplicate_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_039",
+      "category": "vision",
+      "query": "找海边人物照，先按时间排序再确认哪些能看见人脸",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "sort_images",
+        "verify_visual_condition",
+        "synthesize"
+      ],
+      "error": null
+    },
+    {
+      "case_id": "ab_extra_040",
+      "category": "organization",
+      "query": "找火车照片，按文件类型分类并每类选1张",
+      "plan_ok": true,
+      "final_state": "done",
+      "plan_task_types": [
+        "retrieve_images",
+        "group_images",
+        "select_images",
+        "synthesize"
+      ],
+      "error": null
+    }
+  ]
+}

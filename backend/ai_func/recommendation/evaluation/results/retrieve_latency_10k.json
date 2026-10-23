@@ -1,0 +1,23 @@
+{
+  "warmup_excluded": true,
+  "queries": [
+    "\u6d77\u8fb9\u65e5\u843d",
+    "\u732b",
+    "\u57ce\u5e02\u591c\u666f",
+    "\u7ea2\u8272\u6c7d\u8f66",
+    "\u6d77\u6ee9",
+    "\u81ea\u884c\u8f66",
+    "\u96ea\u5c71",
+    "\u5ba4\u5185",
+    "\u5efa\u7b51",
+    "\u72d7"
+  ],
+  "retrieve": {
+    "n": 10,
+    "mean_ms": 116.881,
+    "p50_ms": 121.236,
+    "p95_ms": 121.879,
+    "p99_ms": 121.981,
+    "max_ms": 122.007
+  }
+}

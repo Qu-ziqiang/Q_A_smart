@@ -1,0 +1,266 @@
+{
+  "total": 20,
+  "note": "score = 该 case 五个 rubric 维度的平均分（LLM Judge 输出）",
+  "items": [
+    {
+      "case_id": "bench_1_agent_benchmark_006",
+      "query": "找高级灰调的高山湖泊图片",
+      "category": "retrieval",
+      "score": 3.2,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索与合成两个任务，顺序合理，但缺少视觉风格筛选/整理任务，无法充分保证高级灰调风格匹配，存在任务缺失。",
+        "仅调用 retrieval agent，未调用视觉 Specialist 或整理 agent，分工不完整，无法验证风格符合性。",
+        "工具调用成功，无失败，但仅一次检索，未体现对风格过滤的额外工具调用。"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_008",
+      "query": "找广角纵深的高山湖泊图片",
+      "category": "retrieval",
+      "score": 3.2,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索与合成两个任务，顺序合理，但缺少视觉 Specialist 参与，无法确认是否满足'广角纵深'风格筛选，存在任务缺失",
+        "仅调用 retrieval agent，未路由到整理或视觉 Specialist，分工不完整，无法验证风格匹配",
+        "工具调用成功，无失败，但仅一次检索且未体现针对风格的多轮或细化检索"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_019",
+      "query": "找自然光影的古镇街道图片",
+      "category": "retrieval",
+      "score": 3.2,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索与合成两个任务，顺序合理，但缺少明确的整理/筛选任务，可能不足以确保结果符合'自然光影'与'古镇街道'双重主题，故规划质量中等。",
+        "仅调用 retrieval agent，未调用整理或视觉 specialist，分工不完整，agent_routing 得分较低。",
+        "工具调用成功且无失败，但仅一次检索，未体现对多主题的充分覆盖，工具使用基本正常但不够充分。"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_020",
+      "query": "找广角纵深的古镇街道图片",
+      "category": "retrieval",
+      "score": 3.2,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索与合成两个任务，顺序合理，但缺少视觉 Specialist 参与，无法确认是否满足'广角纵深'视觉风格要求",
+        "仅调用 retrieval agent，未路由到整理或视觉 Specialist，分工不完整",
+        "工具调用成功，无失败或异常，但仅一次检索且未体现多角度检索"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_023",
+      "query": "找自然光影的霓虹夜景图片",
+      "category": "retrieval",
+      "score": 3.2,
+      "verdict": "flag",
+      "judge_reason": [
+        "Plan includes only retrieve_images and synthesize, but no explicit visual specialist or curation step for 'natural light' style filtering; task sequence is minimal and may miss quality refinement.",
+        "Only retrieval agent is listed; no visual specialist or synthesis agent is present, despite plan task t2 being synthesize. Agent routing is incomplete for the stated goal.",
+        "Tool usage: single search_images call succeeded with no failures; no evidence of empty retrieval or abnormal calls."
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_032",
+      "query": "找广角纵深的美食特写图片",
+      "category": "retrieval",
+      "score": 3.2,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索与合成两个任务，顺序合理，但缺少视觉 Specialist 参与，无法充分验证图片风格（广角纵深美食特写）是否匹配，存在任务缺失。",
+        "仅调用 retrieval agent，未路由到整理或视觉 Specialist，分工不完整，无法确保风格筛选质量。",
+        "工具调用成功（1/1），无失败或异常，工具使用正常。"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_1_agent_benchmark_018",
+      "query": "找高级灰调的古镇街道图片",
+      "category": "retrieval",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索与综合两个任务，顺序合理，但缺少视觉风格筛选或整理任务，可能不足以确保高级灰调风格匹配",
+        "仅调用 retrieval agent，缺少视觉 Specialist 或整理 agent，分工不完整，无法验证风格符合性",
+        "工具调用成功，无失败，但仅一次检索，未体现对风格关键词的精细处理"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_001",
+      "query": "搜索雪地村庄相关照片，然后按地点分组整理",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索、过滤、分组、综合四步，顺序合理且覆盖用户目标，但未明确列出视觉 Specialist 相关任务，存在轻微缺失。",
+        "agents 仅列出 organizer 和 retrieval，缺少视觉 Specialist 的调用记录，与任务描述中提及的 Specialist 分工不完全匹配。",
+        "工具调用 1 次全部成功，无失败或异常，但仅调用 search_images，未体现其他可能需要的工具（如分组或视觉处理工具），工具使用范围有限。"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_002",
+      "query": "搜索雪地村庄相关照片，然后按拍摄地点分类输出",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "Plan tasks align with query goal (retrieve, filter, group, synthesize) and all tasks succeeded.",
+        "Only organizer and retrieval agents are listed; no visual specialist or dedicated grouping agent is evident, though grouping may be handled by organizer.",
+        "Tool usage: 1/1 success, no failures or abnormal calls."
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_003",
+      "query": "搜索雪地村庄相关照片，然后整理成地点相册",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索、过滤、分组、综合，顺序合理，符合目标，但未明确视觉 Specialist 任务，略有缺失",
+        "agents 仅列出 organizer 和 retrieval，缺少视觉 Specialist，但检索与整理分工基本合理",
+        "工具调用 1 次成功，无失败，但仅调用 search_images，未体现其他必要工具（如分组或视觉工具）"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_004",
+      "query": "搜索雪地村庄相关照片，然后按地点归档",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索、过滤、分组、综合，顺序合理，符合目标，但缺少明确的视觉 specialist 任务，可能影响按地点归档的视觉判断",
+        "agents 仅列出 organizer 和 retrieval，未调用视觉 specialist，与 query 中按地点归档可能需要的视觉分析不完全匹配",
+        "工具调用成功，无失败，但仅调用一次 search_images，检索范围可能不足"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_005",
+      "query": "搜索沙漠公路相关照片，然后按地点分组整理",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "Plan tasks align with query goal (retrieve, filter, group, synthesize) and all tasks succeeded in order.",
+        "Only organizer and retrieval agents are listed; no visual specialist was invoked, but grouping by location may not require visual analysis. Routing is partially reasonable but lacks explicit specialist coverage for grouping.",
+        "Tool usage: 1/1 success (search_images), no failures or abnormal calls."
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_006",
+      "query": "搜索沙漠公路相关照片，然后按拍摄地点分类输出",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索、过滤、分组、综合四个任务，顺序合理，能覆盖用户目标，但缺少明确的视觉分类/整理任务，与目标中'按拍摄地点分类输出'的视觉归类要求不完全匹配。",
+        "agents 列表中仅包含 organizer 和 retrieval，未体现视觉 Specialist 或分类/整理 Agent 的参与，分工不完整。",
+        "工具调用成功（1/1），无失败或异常调用，但仅调用一次 search_images，检索覆盖面可能不足。"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_007",
+      "query": "搜索沙漠公路相关照片，然后整理成地点相册",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "Planning quality is good: the task sequence (retrieve, filter, group, synthesize) aligns with the goal of retrieving desert road photos and organizing them into location albums.",
+        "Agent routing is partially unclear: the context lists only 'organizer' and 'retrieval' agents, but no visual specialist is mentioned despite the goal involving image organization; routing to a visual specialist is not confirmed.",
+        "Tool usage is successful: 1/1 search_images call succeeded with no failures, though only one tool call was made for a multi-step retrieval task."
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_008",
+      "query": "搜索沙漠公路相关照片，然后按地点归档",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索、过滤、分组、综合四个任务，顺序合理，符合按地点归档的目标，但缺少明确的视觉 Specialist 任务，规划质量良好但非最优。",
+        "agents 列表中仅有 organizer 和 retrieval，未包含视觉 Specialist，但任务类型主要为检索与元数据过滤，分工基本合理，视觉 Specialist 缺失可能影响图像内容理解。",
+        "工具调用 1 次全部成功，无失败或异常调用，工具使用质量良好。"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_009",
+      "query": "搜索港口集装箱相关照片，然后按地点分组整理",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "Plan tasks align with query goal (retrieve, filter, group, synthesize) and all tasks succeeded in order.",
+        "Only organizer and retrieval agents are listed; no visual specialist was invoked, but the query may not require visual analysis, so routing is partially reasonable but incomplete evidence.",
+        "Tool usage: 1/1 success with search_images; no failures or abnormal calls observed."
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_010",
+      "query": "搜索港口集装箱相关照片，然后按拍摄地点分类输出",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索、过滤、分组、综合四步，顺序合理且覆盖用户目标，但缺少明确的分类输出步骤，计划质量良好但非满分。",
+        "agents 仅列出 organizer 和 retrieval，未提及视觉 Specialist，且任务类型中无视觉相关任务，分工不完整，agent_routing 评分偏低。",
+        "工具调用 1 次全部成功，无失败或异常，tool_usage 表现良好。"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_011",
+      "query": "搜索港口集装箱相关照片，然后整理成地点相册",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "Plan tasks (retrieve, filter, group, synthesize) align with the query goal of searching and organizing by location; order is logical.",
+        "Only 'organizer' and 'retrieval' agents are listed; no visual specialist is present, but the query does not explicitly require visual analysis, so routing is acceptable but not fully specialized.",
+        "Tool usage: 1 call to search_images succeeded with no failures; no empty retrieval or error occurred."
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_012",
+      "query": "搜索港口集装箱相关照片，然后按地点归档",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索、过滤、分组、综合四步，顺序合理且覆盖用户目标，但缺少明确的视觉 specialist 任务，规划基本合格。",
+        "agents 仅列出 organizer 和 retrieval，未调用视觉 specialist，与 query 中'照片'检索及按地点归档的视觉/整理需求不完全匹配，分工存在缺失。",
+        "工具调用 1 次全部成功，无失败或异常，工具使用正常。"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    },
+    {
+      "case_id": "bench_2_agent_benchmark_013",
+      "query": "搜索雨夜街景相关照片，然后按地点分组整理",
+      "category": "organization",
+      "score": 3.6,
+      "verdict": "flag",
+      "judge_reason": [
+        "计划包含检索、过滤、分组、综合四步，顺序合理且覆盖用户目标，但未明确体现视觉 Specialist 的参与，规划层面基本合格。",
+        "agents 仅列出 organizer 和 retrieval，缺少视觉 Specialist；分组整理任务可能依赖视觉分析，但路由分工不完整，故扣分。",
+        "工具调用仅 search_images 一次且成功，无失败或异常调用，符合检索需求，但工具种类单一，未体现过滤/分组专用工具。"
+      ],
+      "possible_issue": "Judge 判定低分；需结合 judge_reason 人工复核"
+    }
+  ]
+}

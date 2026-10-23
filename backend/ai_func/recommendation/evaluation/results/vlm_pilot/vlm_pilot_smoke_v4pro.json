@@ -1,0 +1,56 @@
+{
+  "blocked": false,
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "config_yaml_untouched": true,
+  "n": 1,
+  "gate_team_rate": 1.0,
+  "assertion_success_rate": 1.0,
+  "stage_latency": {
+    "vlm": {
+      "n": 1,
+      "mean_ms": 20251.096,
+      "p50_ms": 20251.096,
+      "p95_ms": 20251.096,
+      "p99_ms": 20251.096,
+      "max_ms": 20251.096
+    }
+  },
+  "mean_query_ms": 20408.0,
+  "note": "决策看 assertion_success_rate 与延迟，不看 Judge。",
+  "records": [
+    {
+      "id": "v01",
+      "query": "找派对照片，再确认画面中是否有生日蛋糕",
+      "kind": "verify",
+      "gate_team": true,
+      "assertion_ok": true,
+      "ms": 20408.0,
+      "retrieved": 2,
+      "passed_count": 0,
+      "inspected": 2,
+      "items": [
+        {
+          "id": 18,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        },
+        {
+          "id": 1161,
+          "passed": false,
+          "status": "success",
+          "error": ""
+        }
+      ]
+    }
+  ],
+  "gate": [
+    {
+      "id": "v01",
+      "query": "找派对照片，再确认画面中是否有生日蛋糕",
+      "got": "team",
+      "ok": true
+    }
+  ]
+}

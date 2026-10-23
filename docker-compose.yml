@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: smartimager-pg
+    environment:
+      POSTGRES_USER: smartimager
+      POSTGRES_PASSWORD: smartimager
+      POSTGRES_DB: smartimager
+    ports:
+      - "5432:5432"
+    volumes:
+      - smartimager_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U smartimager -d smartimager"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  smartimager_pgdata:

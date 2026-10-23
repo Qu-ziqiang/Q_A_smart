@@ -1,0 +1,166 @@
+{
+  "planner_calls": 2,
+  "queries": [
+    "城市建筑",
+    "城市建筑 改写"
+  ],
+  "supervisor_trace": [
+    {
+      "state": "plan",
+      "attempt": 0,
+      "iteration": 0,
+      "decision": null,
+      "reason": "",
+      "affected_tasks": [],
+      "trigger": null,
+      "suggested_action": null,
+      "REPLAN_REASON": "",
+      "REPLAN_ACTION": ""
+    },
+    {
+      "state": "execute",
+      "attempt": 1,
+      "iteration": 1,
+      "decision": null,
+      "reason": "",
+      "affected_tasks": [],
+      "trigger": null,
+      "suggested_action": null,
+      "REPLAN_REASON": "",
+      "REPLAN_ACTION": ""
+    },
+    {
+      "state": "review",
+      "attempt": 1,
+      "iteration": 1,
+      "decision": "replan",
+      "reason": "EMPTY_RETRIEVAL: action=RETRY_REWRITE",
+      "affected_tasks": [
+        "t1"
+      ],
+      "trigger": "EMPTY_RETRIEVAL",
+      "suggested_action": "RETRY_REWRITE",
+      "REPLAN_REASON": "EMPTY_RETRIEVAL",
+      "REPLAN_ACTION": "RETRY_REWRITE"
+    },
+    {
+      "state": "plan",
+      "attempt": 1,
+      "iteration": 1,
+      "decision": null,
+      "reason": "",
+      "affected_tasks": [],
+      "trigger": null,
+      "suggested_action": null,
+      "REPLAN_REASON": "",
+      "REPLAN_ACTION": ""
+    },
+    {
+      "state": "execute",
+      "attempt": 2,
+      "iteration": 2,
+      "decision": null,
+      "reason": "",
+      "affected_tasks": [],
+      "trigger": null,
+      "suggested_action": null,
+      "REPLAN_REASON": "",
+      "REPLAN_ACTION": ""
+    },
+    {
+      "state": "review",
+      "attempt": 2,
+      "iteration": 2,
+      "decision": "continue",
+      "reason": "执行结果满足要求",
+      "affected_tasks": [],
+      "trigger": "NONE",
+      "suggested_action": "NONE",
+      "REPLAN_REASON": "",
+      "REPLAN_ACTION": ""
+    },
+    {
+      "state": "done",
+      "attempt": 2,
+      "iteration": 2,
+      "decision": "continue",
+      "reason": "执行结果满足要求",
+      "affected_tasks": [],
+      "trigger": "NONE",
+      "suggested_action": "NONE",
+      "REPLAN_REASON": "",
+      "REPLAN_ACTION": ""
+    }
+  ],
+  "events": [
+    {
+      "event": "plan.created",
+      "iteration": 1,
+      "tasks": [
+        "retrieve_images",
+        "synthesize"
+      ]
+    },
+    {
+      "event": "agent.observe",
+      "iteration": 1,
+      "trigger": "EMPTY_RETRIEVAL",
+      "REPLAN_REASON": "EMPTY_RETRIEVAL",
+      "REPLAN_ACTION": "RETRY_REWRITE",
+      "retrieval": {
+        "empty": true,
+        "candidate_count": 0,
+        "query": "城市建筑",
+        "top1_score": null
+      }
+    },
+    {
+      "event": "agent.review",
+      "iteration": 1,
+      "decision": "replan",
+      "trigger": "EMPTY_RETRIEVAL",
+      "REPLAN_REASON": "EMPTY_RETRIEVAL",
+      "REPLAN_ACTION": "RETRY_REWRITE"
+    },
+    {
+      "event": "plan.created",
+      "iteration": 2,
+      "tasks": [
+        "retrieve_images",
+        "synthesize"
+      ]
+    },
+    {
+      "event": "agent.observe",
+      "iteration": 2,
+      "trigger": "NONE",
+      "REPLAN_REASON": "",
+      "REPLAN_ACTION": "",
+      "retrieval": {
+        "empty": false,
+        "candidate_count": 2,
+        "query": "城市建筑 改写",
+        "top1_score": 0.91
+      }
+    },
+    {
+      "event": "agent.review",
+      "iteration": 2,
+      "decision": "continue",
+      "trigger": "NONE",
+      "REPLAN_REASON": "",
+      "REPLAN_ACTION": ""
+    },
+    {
+      "event": "assistant_delta",
+      "ids": null
+    },
+    {
+      "event": "selection",
+      "ids": [
+        201,
+        202
+      ]
+    }
+  ]
+}
